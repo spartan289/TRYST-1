@@ -1,0 +1,101 @@
+ 
+ SEARCH BAR
+ 
+ <div class="search">
+        <form action="">
+            <input type="text" placeholder="Enter Event name ">
+            <button type="submit">
+                <span>Search</span>
+                <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                </svg>
+            </button>
+        </form>
+    </div>
+
+
+
+
+FILTER + DROPDOWN
+ <!-- <div class="dropdown center">
+        <button class="mobile-filter">
+            <span>Filters</span>
+            <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+            </svg>
+        </button>
+        <div class="dropdown-content">
+            <form action="">
+                <input type="checkbox" name="flagShip" id="">FlagShip<br>
+                <input type="checkbox" name="CompScience" id="">Computer Science<br>
+                <input type="checkbox" name="Chemistry" id="">Chemistry<br>
+                <input type="checkbox" name="Econmics" id="">Econimics<br>
+                <input type="checkbox" name="Management" id="">Management<br>
+                <input type="checkbox" name="Mechanical" id="">Mechanical<br>
+                <input type="checkbox" name="Physics" id="">Physics<br>
+                <input type="checkbox" name="Robotics" id="">Robotics<br>
+                <input type="checkbox" name="Strategy" id="">Strategy<br>
+                <button type="submit">
+                    <span>apply</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+
+FILTER
+<div class="main2-left">
+            <form action="">
+                <button>
+                    <span>Filters</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+                <div class="filters">
+                    <input type="checkbox" name="flagShip" id="">FlagShip<br>
+                    <input type="checkbox" name="CompScience" id="">Computer Science<br>
+                    <input type="checkbox" name="Chemistry" id="">Chemistry<br>
+                    <input type="checkbox" name="Econmics" id="">Econimics<br>
+                    <input type="checkbox" name="Management" id="">Management<br>
+                    <input type="checkbox" name="Mechanical" id="">Mechanical<br>
+                    <input type="checkbox" name="Physics" id="">Physics<br>
+                    <input type="checkbox" name="Robotics" id="">Robotics<br>
+                    <input type="checkbox" name="Strategy" id="">Strategy<br>
+                </div>
+                <button type="submit">
+                    <span>apply</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+
+MAIN 2 BUTTONS
+<div class="main2-btn">
+                <button>
+                    <span>Competitions</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+                <button>
+                    <span>Workshops</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+                <button>
+                    <span>Guest Speakers</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+
+            </div>
