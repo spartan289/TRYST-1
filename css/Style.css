@@ -1,14 +1,17 @@
 :root {
-    --c1: #a1bfa7;
-    --c2: #79aa89;
-    --c3: #5f927d;
-    --c4: #457a6f;
-    --c5: #396561;
-    --c6: #2c5053;
+    --c4: #50242e;
+    --c1: #934351;
+    --c6: #da6e7b;
+    --c7: #bc6c81;
+    --c7: #b86967;
+    --c3: #f894c3;
+    --c5: #dc8e88;
+    --c2: #fad6ad;
+    --c7: #b4b47c;
 }
 
 .main {
-    background:#a1bfa7;
+    background:#bc6c81;
     margin: 0px;
 }
 
@@ -19,7 +22,7 @@
     justify-content: center;
     display: flex;
     font-size: 600%;
-    color: #2c5053;
+    color:#934351;
     font-family: fantasy;
 }
 
@@ -65,7 +68,7 @@
 .main2-left {
     width: 25%;
     /* height: 400px; */
-    background: #5f927d;
+    background:#bc6c81;
     align-items: center;
     justify-content: center;
 }
@@ -79,8 +82,9 @@
 }
 
 .main2-right {
+    margin-top: 50px;
     width: 100%;
-    background: #5f927d;
+    background: #bc6c81;
 }
 
 .main2-btn {
@@ -169,8 +173,9 @@
 }
 
 .Single-event {
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: none;
-    /* display: block; */
     align-items: center;
     justify-content: center;
     height: 400px;
@@ -178,15 +183,16 @@
 }
 
 .SE-left {
-    border-right: 4px solid #2c5053;
+    border-right: 4px solid #50242e;
     float: left;
     height: 400px;
     width: 39%;
-    background: #a1bfa7;
+    background:#bc6c81;
 }
 
 .SE-left img {
     margin-left: 25%;
+    /* margin-right: 15%; */
     margin-top: 15%;
 }
 
@@ -195,10 +201,10 @@
     float: right;
     height: auto;
     width: 60%;
-    background-color:#a1bfa7;
+    background-color:#bc6c81;
 }
 .SE-text{
-    color: #2c5053;
+    color: #50242e;
     margin-left: 10%;
     margin-top: 5px;
 }
@@ -221,6 +227,9 @@ b{
 }
 
 @media (max-width: 800px) {
+    .banner{
+        width: auto;
+    }
     .cards {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -231,8 +240,7 @@ b{
 
     .main2-right {
         width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        /* margin-left: 10px; */
     }
 
     .main2-btn button {
@@ -271,25 +279,28 @@ b{
     }
     .SE-left {
         border-right: none;
-        background: #a1bfa7;
+        background:#bc6c81;
         width: 100%;
         margin: 0px;
         padding: 0px;
         padding-top: 20px;
         height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .SE-left img{
         margin: 0px;
-        margin-left: 12%;
     }
     .SE-right {
         margin-left: 20%px;
+        margin-right: 20%px;
         align-items: center;
         justify-content: center;
         width: 100%;
         padding-top:0px;
         height: auto;
-        background-color:#a1bfa7;
+        background-color:#bc6c81;
     }
     .SE-btn{
         float: none;
@@ -346,7 +357,7 @@ button:active>span {
 }
 
 button>svg {
-    fill: #396561;
+    fill: #50242e;
     position: absolute;
     top: -5%;
     left: -5%;
