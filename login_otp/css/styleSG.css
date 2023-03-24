@@ -1,0 +1,103 @@
+body {
+	background-color: hsl(208deg 87% 97%);
+	
+}
+
+h2 {
+	position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+}
+
+.slider {
+	height: 110px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 80%;
+}
+
+.slider .slide-track {
+	-webkit-animation: scroll 30s linear infinite;
+	animation: scroll 30s linear infinite;
+	display: flex;
+	width: calc(250px * 14);
+}
+
+.slider .slide {
+	height: 100px;
+	width: 250px;
+}
+
+.slider .slide img {
+    width: 80%;
+	height: 100px;
+	border-radius: 10px;
+	border: 2px solid #bbbbbb;
+}
+
+@-webkit-keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+.footer{
+    margin-top: 40px;
+    width: 100%;
+    padding: 40px 15%;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+    font-size: larger;
+}
+.footer div h3{
+   color: rgb(241, 227, 75);
+    font-size: large;
+    font-family: Geneva;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.col-1 a{
+	color: rgb(130, 131, 137);
+	font-size:larger;
+	font-family: algerian;
+}
+.col-2{
+	color: rgb(244, 167, 100);
+}
+.col-3{
+	color: rgba(82, 232, 237, 0.912);
+}
+a:hover{color: #bbbbbb;}
+
+nav a{
+	color: rgb(229, 236, 243);
+}
+
