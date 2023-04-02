@@ -54,12 +54,45 @@
 			$query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege) VALUES ('$uname', '$email', '$mobile', '$college')";
 
 			mysqli_query($con, $query) ;
-			sendMail($uname,$email,$mobile);
+			sendVerificationMail($uname,$email,$mobile);
 
 
 			$_SESSION['message'] = 'Registration successful ! Email With Ticket is Sent to your Email ID' ;
 			header('location: ind.php') ;
 		}
 
+    }
+    function sendVerificationMail($name,$email,$mobile){
+        require 'vendor/autoload.php';
+        $verif_link = 'http://localhost/TRYST-1/api/verify.php?data='.encryptData($name,$email,$mobile);
+
+        $verif_mail = ' <h1>Verification Email</h1> <br> <p>Click on the link to verify your email</p> <br> <a href="'.$verif_link.'">Click here to verify your email</a>';
+        // code to send mail
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->Host = 'smtp.office365.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'sagarpc2020@outlook.com';
+        $mail->Password = 'Sagar@9398';
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
+        $mail->setFrom('sagarpc2020@outlook.com', 'Sagar');
+        $mail->addAddress($email, $name);
+        
+        $mail->isHTML(true);
+        $mail->Subject = 'Verification Email';
+        $mail->Body = $verif_mail;
+        $mail->AltBody = 'This is a verification email';
+
+        if(!$mail->send()) {
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+        } else {
+            echo 'Message has been sent';
+        }
+
+
+
+            
     }    
 ?>

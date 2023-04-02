@@ -20,7 +20,6 @@
 
 <body
   style="background-image: url('tryst_bg.png');	background-repeat: no-repeat; background-size: cover; height: 100%;">
-  check if a session message is present
   <?php
   // check if a session message is present
   session_start();

@@ -17,7 +17,7 @@
     }
     function encryptData($name,$email,$mobile){
         // code to encrypt data
-        $data = $name.",/|".$email."/|".$mobile;
+        $data = $name.",/|".$email.",/|".$mobile;
         $data = base64_encode($data);
         return $data;
     }
@@ -26,7 +26,7 @@
         // code to decrypt data
         $data = base64_decode($data);
         //separate data
-        $data = explode(',',$data);
+        $data = explode(",/|",$data);
 
         return $data;
     }

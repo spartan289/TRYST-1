@@ -20,7 +20,7 @@
     $result = mysqli_query($conn, $query) ;
     if(mysqli_num_rows($result) > 0) {
         //check if c_attended is True
-        $query = "SELECT * FROM `tryst_info` WHERE (cmobile = '$mobile' or c_mailId = '$email') and c_attended=True" ;
+        $query = "SELECT * FROM `tryst_info` WHERE (cmobile = '$mobile' or c_mailId = '$email') and is_verified=True" ;
         $result = mysqli_query($conn, $query) ;
         if(mysqli_num_rows($result) > 0) {
             // send response with 200 status code
@@ -28,7 +28,7 @@
             exit();
         }
         else{
-            $query = "UPDATE `tryst_info` SET c_attended=True WHERE (cmobile = '$mobile' or c_mailId = '$email') and c_attended=False" ;
+            $query = "UPDATE `tryst_info` SET is_verified=True WHERE (cmobile = '$mobile' or c_mailId = '$email') and is_verified=False" ;
             $result = mysqli_query($conn, $query) ;
             // send response with 200 status code
     
@@ -42,25 +42,25 @@
     }
     else{
         // send response with 404 status code
-        response(404,"Invalid QR",NULL);
+        response(404,"Invalid Verification Link",NULL);
 
     }
     function response($status,$status_message,$data)
     {
-        header("HTTP/1.1 ".$status);
-    
-        $response['status']=$status;
-        $response['status_message']=$status_message;
-        $response['data']=$data;
-    
-        $json_response = json_encode($response);
-        echo $json_response;
+        // start seesion
+        session_start();
+        // set response code
+        http_response_code($status);
+        // set session message
+        $_SESSION['message'] = $status_message ;
+        header('location: ../ind.php') ;
+        exit();
     }
     function decryptData($data){
         // code to decrypt data
         $data = base64_decode($data);
         //separate data
-        $data = explode(',',$data);
+        $data = explode(",/|",$data);
 
         return $data;
     }
