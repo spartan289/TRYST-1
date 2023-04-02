@@ -11,8 +11,8 @@
         $mail->isSMTP();
         $mail->Host = 'smtp.office365.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'sagarpc2020@outlook.com';
-        $mail->Password = 'Sagar@9398';
+        $mail->Username = 'abc@outlook.com';
+        $mail->Password = 'def';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
         $mail->setFrom('sagarpc2020@outlook.com', 'Sagar');
