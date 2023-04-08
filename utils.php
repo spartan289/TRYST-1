@@ -1,5 +1,8 @@
 <?php 
     // create a functions to send mail
+    require 'vendor/autoload.php';
+    use PHPMailer\PHPMailer\PHPMailer;
+
     function getQRCode($name,$email,$mobile){
         // code to generate QR code
         
@@ -21,6 +24,37 @@
         $data = base64_encode($data);
         return $data;
     }
+
+    function sendMail($name, $email, $mobile)
+    {
+        // code to send mail
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->Host = 'smtp.office365.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'sagarpc2020@outlook.com';
+        $mail->Password = 'Sagar@9398';
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
+        $mail->setFrom('sagarpc2020@outlook.com', 'Sagar');
+        $mail->addAddress($email, $name);
+    
+        $mail->isHTML(true);
+        $mail->Subject = 'Test Email';
+        $mail->Body = 'This is a test email';
+        $mail->AltBody = 'This is a test email';
+    
+        $qr = getQRCode($name, $email, $mobile);
+        $mail->addStringAttachment($qr, 'qr.png');
+    
+        if (!$mail->send()) {
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+        } else {
+            echo 'Message has been sent';
+        }
+    }
+    
 
     function decryptData($data){
         // code to decrypt data

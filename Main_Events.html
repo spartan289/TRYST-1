@@ -5,106 +5,786 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-    <link rel="icon" type="image/png" href="images/logo.png" />
-    <link rel="stylesheet" href="css/Style.css">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>TRYST'23-Events</title>
+    <link rel="icon" type="image/png" href="images/logo1.png" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/styleRK.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="main">
-    <div class="banner" style="background-image: url('images/try2.png');" onclick="handelBack()">
-        EVENTS
+<body class="main"
+    style="background-image: url('images/!logo.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
+    <nav class="position" role="navigation">
+        <!-- new -->
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+          -->
+            <ul id="menu">
+                <a href="frontpage.html">
+                    <li>Home</li>
+                </a>
+                <a class="active" href="Main_Events.html">
+                    <li>Events</li>
+                </a>
+                <a href="Sponsor.html">
+                    <li>Sponsors</li>
+                </a>
+                <a href="Register.html">
+                    <li>Register</li>
+                </a>
+                <a href="team.html">
+                    <li>Contact Us</li>
+                </a>
+                <a href="Aboutus.html">
+                    <li>About Us</li>
+                </a>
+            </ul>
+        </div>
+        <a href="frontpage.html"><label class="logo"> TRYST'23</a>
+        </label>
+        <ul class="options">
+            <li><a href="frontpage.html">Home </a> </li>
+            <li><a class="active" href="Main_Events.html">Events</a> </li>
+            <li><a href="Sponsor.html">Sponsors</a> </li>
+            <li><a href="Register.html">Register</a> </li>
+            <li><a href="team.html">Contact Us</a> </li>
+            <li><a href="Aboutus.html">About Us </a> </li>
+        </ul>
+    </nav>
+
+    <div class="CTR">
+        <span id="HD">EVENTS</span>
     </div>
-    <!-- SEARCH -->
-    <!-- MOBLIE FILTER + DROPDOWN -->
+
     <div class="main2 flex" id="AE">
-        <!-- FILTER -->
         <div class="main2-right">
-            <!-- MAIN 2 BUTTONS -->
             <div class="events cards">
-                <div class="card" id="1"><img src="images/1.jpg" alt="" onclick="ShowSE(1)"></div>
-                <div class="card" id="2"><img src="images/1.jpg" alt="" onclick="ShowSE(2)"></div>
-                <div class="card" id="3"><img src="images/1.jpg" alt="" onclick="ShowSE(3)"></div>
-                <div class="card" id="4"><img src="images/1.jpg" alt="" onclick="ShowSE(4)"></div>
-                <div class="card" id="5"><img src="images/1.jpg" alt="" onclick="ShowSE(5)"></div>
-                <div class="card" id="6"><img src="images/1.jpg" alt="" onclick="ShowSE(6)"></div>
-                <div class="card" id="7"><img src="images/1.jpg" alt="" onclick="ShowSE(7)"></div>
-                <div class="card" id="8"><img src="images/1.jpg" alt="" onclick="ShowSE(8)"></div>
-                <div class="card" id="9"><img src="images/1.jpg" alt="" onclick="ShowSE(9)"></div>
+                <div class="card" id="1"><img src="images/AITANK.webp" onclick="ShowSE(1)"></div>
+                <div class="card" id="2"><img src="images/AITANK.webp" onclick="ShowSE(2)"></div>
+                <div class="card" id="3"><img src="images/AITANK.webp" onclick="ShowSE(3)"></div>
+                <div class="card" id="4"><img src="images/AITANK.webp" onclick="ShowSE(4)"></div>
+                <div class="card" id="5"><img src="images/AITANK.webp" onclick="ShowSE(5)"></div>
+                <div class="card" id="6"><img src="images/AITANK.webp" onclick="ShowSE(6)"></div>
+                <div class="card" id="7"><img src="images/AITANK.webp" onclick="ShowSE(7)"></div>
+                <div class="card" id="8"><img src="images/AITANK.webp" onclick="ShowSE(8)"></div>
+                <div class="card" id="9"><img src="images/AITANK.webp" onclick="ShowSE(9)"></div>
+                <div class="card" id="10"><img src="images/AITANK.webp" onclick="ShowSE(10)"></div>
+                <div class="card" id="11"><img src="images/AITANK.webp" onclick="ShowSE(11)"></div>
+                <div class="card" id="12"><img src="images/AITANK.webp" onclick="ShowSE(12)"></div>
+                <div class="card" id="13"><img src="images/AITANK.webp" onclick="ShowSE(13)"></div>
+                <div class="card" id="14"><img src="images/AITANK.webp" onclick="ShowSE(14)"></div>
+                <div class="card" id="15"><img src="images/AITANK.webp" onclick="ShowSE(15)"></div>
+                <div class="card" id="16"><img src="images/AITANK.webp" onclick="ShowSE(16)"></div>
+                <div class="card" id="17"><img src="images/AITANK.webp" onclick="ShowSE(17)"></div>
+                <div class="card" id="18"><img src="images/AITANK.webp" onclick="ShowSE(18)"></div>
+                <div class="card" id="19"><img src="images/AITANK.webp" onclick="ShowSE(19)"></div>
+                <div class="card" id="20"><img src="images/AITANK.webp" onclick="ShowSE(20)"></div>
+                <div class="card" id="21"><img src="images/AITANK.webp" onclick="ShowSE(21)"></div>
+                <div class="card" id="22"><img src="images/AITANK.webp" onclick="ShowSE(22)"></div>
             </div>
         </div>
 
     </div>
-
+    <!-- Swaragini -->
     <div class="Single-event flex" id="SE-1">
         <div class="">
             <div class="SE-left">
-                <img src="images/1.jpg" alt="">
+                <img src="images/AITANK.webp" alt="">
             </div>
             <div class="SE-right">
-                <h1 class="SE-text">Baithak</h1>
-                <h4 class="SE-text">12:30pm</h3>
-                    <p class="SE-text para"><B>SHADES</B> - The Drama Society of Keshav Mahavidiyala present ... some
-                        description</p>
-                    <button class="SE-btn">
-                        <span>Register here</span>
-                        <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
-                            <path
-                                d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
-                        </svg>
-                    </button>
+                <h1 class="SE-text  M">Swaragini</h1>
+                <h4 class="SE-text">9:30 - 12:30 pm</h4>
+                <h4 class="SE-text">Auditorium</h4>
+                <p class="SE-text para">Swaragini is an Indian Classical Choir competition that welcomes participation
+                    from all the music societies. This competition will be a battle of Indian folk music with a touch of
+                    classical instruments. It is a captivating blend of diverse melodies, culminating a breath-taking
+                    musical experience. With its enchanting renditions of various tunes, Swaragini promises to be a
+                    beautiful symphony of music showcasing the rich cultural heritage of India. The competition offers a
+                    platform for aspiring singers to demonstrate their skills and break into the music industry.
+                    Swaragini is not only a competition but also a celebration of India's musical heritage. From the
+                    rustic tunes of Punjab to the soulful melodies of Bengal, the audience will be treated to a musical
+                    journey through the length and breadth of India.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
-    <div class="Single-event flex" id="SE">
+    <!-- Baithak Stage -->
+    <div class="Single-event flex" id="SE-2">
         <div class="">
             <div class="SE-left">
-                <img src="images/1.jpg" alt="">
+                <img src="images/AITANK.webp" alt="">
             </div>
             <div class="SE-right">
-                <h1 class="SE-text">Event Name</h1>
-                <h4 class="SE-text">Time</h3>
-                    <p class="SE-text para"><B>Society name</B> - The X Society of Keshav Mahavidiyala present ... some
-                        description</p>
-                    <button class="SE-btn">
-                        <span>Register here</span>
-                        <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
-                            <path
-                                d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
-                        </svg>
-                    </button>
+                <h1 class="SE-text  M">Baithak Stage</h1>
+                <h4 class="SE-text">1:30-7:30 pm</h4>
+                <h4 class="SE-text">Auditorium</h4>
+                <p class="SE-text para">Stage plays have been an important form of entertainment and storytelling for
+                    centuries, offering a unique and immersive experience that cannot be replicated by any other medium.
+                    They allow audience to witness live performances of stories and characters, creating an intimate
+                    connection between the actors and the viewers. We are excited to announce our upcoming stage play
+                    competition at Baithak’23, and we warmly welcome all of you to participate in this exciting event.
+                    The upcoming stage play competition will feature three categories of entries: fiction stories,
+                    non-fiction stories, and adapted plays. The competition aims to celebrate and showcase the best of
+                    contemporary stage plays through the combination of live performance, set design, lighting, and
+                    sound also encouraging creativity and innovation in the field of theatre
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Exhibition and Workshop  -->
+    <div class="Single-event flex" id="SE-3">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Exhibition and Workshop </h1>
+                <h4 class="SE-text">10 am onward</h4>
+                <h4 class="SE-text">Canteen lawn</h4>
+                <p class="SE-text para">Illuminati, the photography society of Keshav Mahavidyalaya has decided to open
+                    its doors to the public and showcase their stunning collection of photographs. The exhibition will
+                    feature a range of photographs, spanning various genres and styles, collected by the society over
+                    the years. From black and white classics to modern cutting-edge works, the exhibition promises to be
+                    a visual feast for the eyes. Attendees will have the opportunity to marvel exquisite work of the
+                    volunteers.
+                    <br>
+                    In addition to the exhibition, Illuminati has decided to hold a basic DSLR workshop for the
+                    attendees. This workshop will provide a hands-on experience for those who wish to improve their
+                    photography skills. The workshop promises to be an invaluable experience for anyone looking to
+                    improve their photography skills, whether they are a beginner or an experienced photographer.
+
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Evince : Poetry-->
+    <div class="Single-event flex" id="SE-4">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Evince: English Poetry Competition </h1>
+                <h4 class="SE-text">10:00 am onwards</h4>
+                <h4 class="SE-text">Amphitheater</h4>
+                <p class="SE-text para">Keshav Mahavidyalaya hosts an annual event that brings together aspiring poets
+                    from various colleges to showcase their talents on stage. The event, called Evince, is an English
+                    slam poetry competition where poets pour out their metaphors straight from their hearts. During the
+                    competition, each poet is given a time limit of five minutes to captivate the audience with the
+                    power of their words. The competition is known for its electrifying atmosphere and the emotional
+                    impact of the performances. At the end of the competition, the top three poets are awarded cash
+                    prizes and exciting gifts that are specially curated by Vagmita. Evince provides a platform for
+                    young poets to share their creative expressions and connects them with fellow artists and
+                    enthusiasts.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- JAZBAAT  -->
+    <div class="Single-event flex" id="SE-5">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">MOOD BOARD: JAZBAAT </h1>
+                <h4 class="SE-text">10:00 am onward</h4>
+                <h4 class="SE-text">LT-1</h4>
+                <p class="SE-text para">“JAZBAAT", the Urdu word that encapsulates the essence of emotions and feelings.
+                    It is an expression that evokes a sense of depth, intensity, and complexity of human emotions. In an
+                    effort to celebrate the power of human emotions, we bring to you the Mood Board Competition. It aims
+                    to be a rendezvous for individuals to showcase their creative prowess by utilizing a wide array of
+                    materials to produce a visual representation of their moods and emotions. The competition is a
+                    unique platform that provides participants with the opportunity to express themselves through their
+                    artistic abilities and convey their feelings in a way that transcends language barriers. The Mood
+                    Board Competition is not just a means to express one’s creatively, but also an opportunity to
+                    explore the depths of human emotions. It is a chance to understand and connect with different
+                    perspectives and learn from the experiences of others. In conclusion, it is an invitation to
+                    celebrate and explore the complexities of human emotions.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Inaayat -->
+    <div class="Single-event flex" id="SE-6">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Inaayat</h1>
+                <h4 class="SE-text">11:00 - 2:00 pm</h4>
+                <h4 class="SE-text">Main stage</h4>
+                <p class="SE-text para">Henry Ford once said “Coming together is a beginning. Keeping together is
+                    progress. Working together is success." Keeping in view the importance of teamwork the western dance
+                    society of KMV is organising Inaayat, a group western dance competition. Inaayat is an exciting and
+                    dynamic competition that celebrates the art of dance in various western styles such as hip hop,
+                    jazz, or contemporary. It provides a platform for dancers to showcase their talent and creativity
+                    while emphasizing teamwork, coordination, and artistic expressions. One of the essential aspects of
+                    Inaayat is its emphasis on teamwork. To participate successfully in this competition, dancers must
+                    work collaboratively with their peers, building trust and developing a high level of commitment.
+                    This collaboration is essential to create a cohesive and engaging performance that showcases the
+                    individual talents of the dancers while highlighting the group's collective artistry.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- BATTLE OF THE BANDS -->
+    <div class="Single-event flex" id="SE-7">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">BATTLE OF THE BANDS</h1>
+                <h4 class="SE-text">2:00 - 5:00 pm</h4>
+                <h4 class="SE-text">main stage</h4>
+                <p class="SE-text para">Music is an art form that has been around for centuries and has evolved with the
+                    passage of time. The battle of the bands is an opportunity for musicians to experiment with their
+                    instruments and create new sounds. It is a platform for them to push the boundaries of traditional
+                    music and explore new genres. The competition encourages young musicians to be innovative and
+                    creative, inspiring them to take risks and be bold in their music-making. Moreover, it is not just a
+                    competition; it is a celebration of music. The event brings together people who share a passion for
+                    music and creates a sense of community among them. It is a place where musicians can learn from each
+                    other, collaborate, and build connections that can last a lifetime.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Pro night day1-->
+    <div class="Single-event flex" id="SE-8">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Pro Night</h1>
+                <h4 class="SE-text">6:30 pm onwards</h4>
+                <h4 class="SE-text">main stage</h4>
+                <p class="SE-text para">
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Irshaad -->
+    <div class="Single-event flex" id="SE-9">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Irshaad: Hindi Poetry Competition </h1>
+                <h4 class="SE-text">10:00 - 1:00 pm</h4>
+                <h4 class="SE-text">Amphitheater</h4>
+                <p class="SE-text para">Every year as a part of Tryst, the poetry society, hosts its Hindi poetry
+                    competition called Irshaad. This event offers a platform for poets to showcase their talent and
+                    express themselves in front of an enthusiastic audience. The venue resonates with the sounds of
+                    "waah-waah" as each poet takes the stage for five minutes to captivate the audience with their
+                    poetry. The competition brings together a diverse group of poets, each with their unique style and
+                    perspective. The top three poets are awarded cash prizes and exciting gifts specially curated by
+                    Vagmita. It is an opportunity for poets to connect with like-minded individuals, showcase their
+                    talent, and celebrate the beauty of the Hindi language.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Nazaat -->
+    <div class="Single-event flex" id="SE-10">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Nazaat</h1>
+                <h4 class="SE-text">2:00 - 5:00 pm</h4>
+                <h4 class="SE-text">Amphitheater</h4>
+                <p class="SE-text para">Wayne Dyer, a motivational speaker, once said, "When you dance, your purpose is
+                    not to get to a certain place on the floor. It's to enjoy each step along the way." This quote
+                    highlights the importance of enjoying the journey rather than solely focusing on the destination.
+                    This statement particularly resonates with individuals who possess a passion for dance. Therefore,
+                    Advaitaa, the western dance society of KMV is organising Nazaat, a solo western dance competition
+                    which provides a stage to the dancers to showcase their skills and artistry. The goal of the
+                    competition is to recognize and celebrate the most talented and creative dancers in the western
+                    dance community. It is an exciting event for both dancers and spectators, as the competition
+                    provides a unique opportunity to witness the beauty and athleticism of western dance in a
+                    competitive setting.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- EUPHONY  -->
+    <div class="Single-event flex" id="SE-11">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">EUPHONY </h1>
+                <h4 class="SE-text">9:30 - 12:30pm</h4>
+                <h4 class="SE-text">Auditorium</h4>
+                <p class="SE-text para">A western style group singing competition wherein the teams shall compete with
+                    each other to present the best version of themselves and to set the hearts of audience on fire with
+                    their melodies, music and expressions. The teams shall be judged on the basis of their teamwork,
+                    stage presence and musical representation. In addition to providing a platform for teams to showcase
+                    their musical talents, this competition is an opportunity for emerging talent to gain recognition
+                    and connect with a broader audience. The event is a celebration of music, where participants come
+                    together to express themselves, inspire others, and create an unforgettable experience for all.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Uthaan -->
+    <div class="Single-event flex" id="SE-12">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text M">Uthaan</h1>
+                <h4 class="SE-text">12:30 - 6:30 pm</h4>
+                <h4 class="SE-text">Auditorium</h4>
+                <p class="SE-text para">Uthaan is a solo classical dance competition that provides a
+                    platform for dancers to showcase their skills and talent in the form of art. The competition is
+                    a celebration of the beauty, complexity, and artistry of classical dance, and it allows dancers
+                    to demonstrate their individual style, creativity, and interpretation of the music and story.
+                    During the competition, each solo dancer performs a classical dance piece, demonstrating their
+                    proficiency in the technique, grace, and expressions that characterize the form. Judges evaluate
+                    each performance based on the dancer's technique, artistry, musicality, and overall impact.
+                    Uthaan is an excellent opportunity for dancers to showcase their talent and receive recognition
+                    for their hard work and dedication to classical dance. The competition also provides a platform
+                    for dancers to learn from one another, as they observe and appreciate different styles and
+                    interpretations of the art form.</p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mridaang -->
+    <div class="Single-event flex" id="SE-13">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Mridaang</h1>
+                <h4 class="SE-text">Time</h4>
+                <p class="SE-text para">Mridaang is a unique cultural event that celebrates the diversity and
+                    richness of Indian folk dance. It is a group folk dance competition that brings together
+                    proficient dancers who showcase their traditional dance form. The competition provides a
+                    platform for these groups to express their cultural identities and promote cross-cultural
+                    understanding and appreciation. Mridaang is more than just a dance competition. It is a cultural
+                    event that promotes the preservation and promotion of Indian heritage and traditions. By
+                    showcasing the diversity of folk dances, Mridaang provides an opportunity for people to learn
+                    about different cultures and appreciate the beauty of these art forms. It is a platform for
+                    dancers to connect with one another, exchange ideas, and build relationships that transcend
+                    cultural boundaries.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Baithak Street -->
+    <div class="Single-event flex" id="SE-14">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Baithak Street </h1>
+                <h4 class="SE-text">11:00 am onward</h4>
+                <h4 class="SE-text">Shades Lawn</h4>
+                <p class="SE-text para">We are excited to announce that BAITHAK'23 will be hosting a street play
+                    competition that promises to be a one-of-a-kind event. Street plays are an important form of theatre
+                    that bring people together and create a sense of community. These plays are performed on streets,
+                    public spaces or other open venues, making them accessible to everyone. At BAITHAK'23, we aim to
+                    provide a platform for street play enthusiasts to showcase their talent and engage with a wide
+                    audience. We believe that street plays can be a powerful tool for social change, and we encourage
+                    participants to address issues that are close to their hearts. Through the power of live
+                    performance, street plays can make a lasting impact on individuals and communities alike. Our street
+                    play competition aims to create an atmosphere where the audience is not only entertained but also
+                    encouraged to reflect on important social issues. We welcome participants to present dynamic and
+                    thought-provoking performances that aim to entertain, educate and inspire.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Divergence -->
+    <div class="Single-event flex" id="SE-15">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Divergence : Debating competition</h1>
+                <h4 class="SE-text">10:00 am onwards</h4>
+                <h4 class="SE-text">Seminar hall</h4>
+                <p class="SE-text para">Vagmita, the Debating Society of Keshav Mahavidyalaya, is thrilled to announce
+                    its premier event, "Divergence," at TRYST. This exciting event is a conventional debate competition
+                    consisting of two rounds, with a twist in the second round that will challenge the participants'
+                    skills and creativity. “Divergence" is an event that welcomes articulate speakers and debaters who
+                    are willing to bring attention to some of the harsh realities of modern society. The event is set to
+                    feature top speakers from various institutions, each of whom is prepared to ignite the audience with
+                    their passionate viewpoints and perspectives. The debaters will be expected to use their skills to
+                    highlight the most pressing issues faced by the society. At the end of the competition, the top
+                    performers will receive well-deserved recognition, including cash prizes and merit certificates.
+                    These awards will undoubtedly stand out on the resumes of the winners and will serve as a testament
+                    to their debating skills and passion for making a difference. Come and be a part of this exciting
+                    event as we celebrate the power of ideas and discourse.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Kaaghaz -->
+    <div class="Single-event flex" id="SE-16">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Kaaghaz: Bilingual Creative Writing Competition </h1>
+                <h4 class="SE-text">11:00 am onwards</h4>
+                <h4 class="SE-text">LT-2</h4>
+                <p class="SE-text para">Vagmita, the poetry society of Keshav Mahavidyalaya, is thrilled to invite
+                    students to participate in its upcoming bilingual creative writing competition: Kaaghaz. This event
+                    provides an excellent opportunity for students to showcase their prowess as a wielder of words and
+                    demonstrate their creative writing abilities. During the competition, participants will be required
+                    to write on the prompts that will be given to them on the day of the event. This will allow them to
+                    explore their imagination and let their creativity run wild on their sheets. The competition
+                    promises to be a challenging and exciting experience for all those who participate. At the end of
+                    the competition, Vagmita will award the top three submissions with cash prizes and exciting gifts.
+                    We encourage all students with a passion for writing to join us for this event and show off their
+                    writing skills. Don't miss out on this opportunity to express yourself and compete against fellow
+                    writers. We look forward to seeing you there!
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Evince: Fashon -->
+    <div class="Single-event flex" id="SE-17">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Evince</h1>
+                <h4 class="SE-text">11:00 - 3:00 pm</h4>
+                <h4 class="SE-text">Main Stage</h4>
+                <p class="SE-text para">Mark Jacobs, a renowned fashion designer, once said, "Life is a fashion show,
+                    the world is your runway." This statement holds true for those who possess a flair for creativity
+                    and talent. Such individuals have the ability to transform their imagination into a masterpiece that
+                    leaves a lasting impact on the world. Naksh, Keshav Mahavidyalaya, recognizes and celebrates the art
+                    of fashion by proudly announcing "evince", a fashion show competition for fashion enthusiasts to
+                    display their creations to the world. This event is a platform for participants to tell a story
+                    through fashion, creatively crafted by their teams, and manifested through confidence, design,
+                    glamour, and elegance into a dazzling display. We invite all the creative savants and enthusiasts to
+                    register for the competition and participate to showcase their artistry. This is an opportunity to
+                    demonstrate your talent and make a mark in the fashion industry. Don't miss out on the chance to
+                    make your fashion dreams a reality.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Pro night day2-->
+    <div class="Single-event flex" id="SE-18">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Pro Night</h1>
+                <h4 class="SE-text">6:30 pm onwards</h4>
+                <h4 class="SE-text">main stage</h4>
+                <p class="SE-text para">
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-        </script>
-    <script>
-        window.addEventListener("popstate", handelBack);
-        function ShowSE(ID) {
-            if (ID == 1) {
-                document.getElementById("AE").style.display = "none";
-                document.getElementById("SE-1").style.display = "block";
-            }
-            else {
-                document.getElementById("AE").style.display = "none";
-                document.getElementById("SE").style.display = "block";
-            }
-            window.history.pushState({ id: 1 }, null, "?q=1234&u=beware");
-        }
-        function handelBack() {
 
-            document.getElementById("AE").style.display = "block";
-            // document.getElementsByClassName("Single-event")[0].style.display = "none";
-            var x = document.getElementsByClassName("Single-event");
-            var i;
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = 'none';
-            }
-        }
-    </script>
+
+
+
+
+
+
+    <!-- Pixel -->
+    <div class="Single-event flex" id="SE-">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Pixel</h1>
+                <h4 class="SE-text">Time</h4>
+                <h4 class="SE-text">online</h4>
+                <p class="SE-text para">Pixel, an online photography competition, is being organized by Illuminati, the
+                    photography society of Keshav Mahavidyalaya. We are pleased to announce that we will be accepting
+                    online entries for our upcoming competition based on the listed themes. Participants can submit
+                    their entries through the online portal and the results will be declared offline on the final day of
+                    the competition. Passes will be allotted to all participants, giving them access to the competition
+                    venue and the chance to view the exhibition. We encourage all participants to attend the event in
+                    person and witness the judging process first-hand. We will be grateful for your interest in the
+                    competition, and we look forward to receiving your submissions.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Spectogram -->
+    <div class="Single-event flex" id="SE-">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">Spectogram</h1>
+                <h4 class="SE-text">Time Duration: 2.5 hrs</h4>
+                <p class="SE-text para">To encourage active participation from attendees, Illuminati has arranged
+                    Spectogram, offline photography competition. The theme for the competition will be given on
+                    the spot, and participants will have to take photographs surrounding the given theme in an offline
+                    mode.The contest will last for a total of 2.5 hours, giving participants enough time to move around
+                    the festival and capture the perfect shots. Once the contest is over, we'll be giving them
+                    instructions on how to submit their entries for consideration. After a thorough screening of all
+                    entries, the winners of the photography competition will be announced. This is an excellent
+                    opportunity for participants to showcase their photography skills and win exciting prizes. So be a
+                    part of this thrilling event!
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- MIJAAZ -->
+    <div class="Single-event flex" id="SE-">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">RANGOLI MAKING: MIJAAZ</h1>
+                <h4 class="SE-text">Time</h4>
+                <p class="SE-text para">This competition is a celebration of Indian traditional art where teams compete
+                    to showcase their creativity and originality through the vibrant and colourful art form of rangoli.
+                    Participants will use a variety of materials and techniques to create unique designs that represent
+                    the rich cultural heritage of India. During the competition, teams will demonstrate their skills by
+                    creating intricate patterns and motifs using colored powders, rice, flowers, and other natural
+                    materials. The judges will evaluate each team based on their technique, originality, and overall
+                    presentation. The competition aims to promote the appreciation of Indian art and culture among
+                    participants and the audience. It provides a platform for artists to showcase their talent and
+                    connect with other like-minded individuals. MIJAAZ encourages teamwork, creativity, and innovation
+                    while preserving the traditional art form of rangoli."
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- PARIDHAAN -->
+    <div class="Single-event flex" id="SE-">
+        <div class="">
+            <div class="SE-left">
+                <img src="images/AITANK.webp" alt="">
+            </div>
+            <div class="SE-right">
+                <h1 class="SE-text  M">NEWSPAPER DRESSING: PARIDHAAN</h1>
+                <h4 class="SE-text">Time</h4>
+                <p class="SE-text para">The newspaper dressing competition is set to be an extraordinary event that will
+                    showcase the artistic prowess and innovative spirit of its participants. This unique competition
+                    will challenge teams to create a stunning outfit using nothing but newspapers. With creativity and
+                    ingenuity at the forefront, the competition will require each team to select one member to serve as
+                    their model, who will be transformed into a walking piece of art. The teams will have to carefully
+                    select and manipulate the newspapers to create a truly remarkable ensemble that will impress the
+                    judges and captivate the audience. This competition will not only be an opportunity to demonstrate
+                    artistic skills, but it will also serve as a platform to promote sustainable practices. By utilizing
+                    newspapers as the primary material, the competition encourages a more environmentally conscious
+                    approach to fashion. All in all, the newspaper dressing competition promises to be an art
+                    extravaganza that celebrates creativity, ingenuity, and sustainability.
+                </p>
+                <button class="SE-btn">
+                    <span>Register here</span>
+                    <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer class="footer" style="position: relative;" id="foot">
+        <div class="b" style="display: flex;">
+            <div id="adrs">
+                KESHAV MAHAVIDYALAYA <br> (University of Delhi)<br>H-4-5 Zone, Pitampura,<br> Near Sainik Vihar,
+                Delhi-110034 <br>
+            </div>
+        </div>
+        <div class="a">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14000.250902147813!2d77.1202477!3d28.6877702!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03c34fb126e3%3A0xb857945e72aca18!2sKeshav%20Mahavidyalaya!5e0!3m2!1sen!2sin!4v1680190395920!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="c">
+            <span>Follow US!</span>
+            <ul class="ftlist">
+                <a href="" target="_blank"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-128.png"
+                        alt=""></a>
+                <a href="" target="_blank"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-128.png"
+                        alt=""></a>
+                <a href="" target="_blank"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
+                        alt=""></a>
+                <a href="" target="_blank"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png"
+                        alt=""></a>
+            </ul>
+            <div>
+                For any queries contact us at :
+                <div class="email">
+                    <a href="" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png"
+                            alt=""></a>
+                    <span>trystOC@gmail.com</span>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main2.js"></script>
 </body>
 
 </html>
