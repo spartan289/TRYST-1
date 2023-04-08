@@ -14,12 +14,13 @@
     $email = $data[1];
     $mobile = $data[2];
     // connect to database
-    $con = mysqli_init();
-    if(getenv("MYSQL_ATTR_SSL_CA") != NULL){
-        mysqli_ssl_set($con,NULL,NULL,getenv("MYSQL_ATTR_SSL_CA"), NULL, NULL);
+    $env = parse_ini_file('.env');
+    $conn = mysqli_init();
+    if($env["MYSQL_ATTR_SSL_CA"] != NULL){
+        mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
 
     }
-    mysqli_real_connect($conn, getenv("AZURE_MYSQL_HOST"), getenv("AZURE_MYSQL_USERNAME"), getenv("AZURE_MYSQL_PASSWORD"), getenv("AZURE_MYSQL_DBNAME"), 3306, MYSQLI_CLIENT_SSL);
+    mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
     // check if data is already present
     $query = "SELECT * FROM `tryst_info` WHERE (cmobile = '$mobile' or c_mailId = '$email')" ;
     $result = mysqli_query($conn, $query) ;
