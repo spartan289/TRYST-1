@@ -44,9 +44,6 @@ CREATE TABLE `tryst_info` (
 -- Dumping data for table `tryst_info`
 --
 
-INSERT INTO `tryst_info` (`index`, `cname`, `cmobile`, `ccollege`, `cdate`, `c_attended`, `c_mailId`, `is_verified`, `ad52ss`, `tickverif`) VALUES
-(1, 'Sagar Rathore', '09310399182', 'Keshav Mahavidyalaya', '2023-04-08 16:24:01', 0, 'sagarzendex@gmail.com', 1, 'https://trystfiles.blob.core.windows.net/screenshots/WhatsApp%20Image%202022-09-30%20at%208.05.04%20AM.jpg', 1);
-
 --
 -- Indexes for dumped tables
 --

@@ -2,11 +2,11 @@
 try {
     //code...
     $con = mysqli_init();
-    if($env["MYSQL_ATTR_SSL_CA"] != NULL){
-        mysqli_ssl_set($con,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
+    if(getenv("MYSQL_ATTR_SSL_CA") != NULL){
+        mysqli_ssl_set($con,NULL,NULL,getenv("MYSQL_ATTR_SSL_CA"), NULL, NULL);
 
     }
-    mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
+    mysqli_real_connect($conn, getenv("AZURE_MYSQL_HOST"), getenv("AZURE_MYSQL_USERNAME"), getenv("AZURE_MYSQL_PASSWORD"), getenv("AZURE_MYSQL_DBNAME"), 3306, MYSQLI_CLIENT_SSL);
 
     $query = "CREATE TABLE `tryst_info` (
         `index` int(11) NOT NULL,
