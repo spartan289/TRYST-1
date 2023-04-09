@@ -90,8 +90,9 @@ nav a {
   border-radius: 3px;
 }
 
-nav a.active,
-nav a:hover {
+/* nav a.active,
+nav a:hover { */
+nav a.active {
   border: 1px solid white;
   transition: .5s;
 }

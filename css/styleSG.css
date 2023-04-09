@@ -13,6 +13,17 @@ body {
 #menulogo {
 	display: none;
 }
+.bt{
+	font-size: 50%;
+	margin: auto;
+    background-color: rgba(134, 190, 212, 0.986);
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 220px;
+    font-family: 'Times New Roman';
+    color: #ffffff;
+}
 
 .Mainlogo {
 	height: auto;
@@ -175,8 +186,7 @@ nav a {
 	border-radius: 3px;
 }
 
-a.active,
-a:hover {
+a.active{
 	border: 1px solid white;
 	transition: .5s;
 }

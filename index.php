@@ -50,7 +50,7 @@
           but hey, it's pure CSS magic.
         -->
         <ul id="menu">
-          <a class="active" href="frontpage.html">
+          <a class="active" href="index.php">
             <li>Home</li>
           </a>
           <a href="Main_Events.html">
@@ -70,10 +70,10 @@
           </a>
         </ul>
       </div>
-      <a href="frontpage.html"><label class="logo"> TRYST'23</a>
+      <a href="index.php"><label class="logo"> TRYST'23</a>
       </label>
       <ul class="options">
-        <li><a class="active" href="frontpage.html">Home </a> </li>
+        <li><a class="active" href="index.php">Home </a> </li>
         <li><a href="Main_Events.html">Events</a> </li>
         <li><a href="Sponsor.html">Sponsors</a> </li>
         <li><a href="Register.php">Register</a> </li>
@@ -112,6 +112,13 @@
     <br>
     <br>
     <br>
+    <div class="CTR">
+      <span id="HD">
+        <a href="Register.html">
+          <button class="bt" onclick="viewform()">Register Here</button>
+        </a>
+      </span>
+    </div>
     <br>
   </div>
 
