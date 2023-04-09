@@ -14,11 +14,11 @@
     $email = $data[1];
     $mobile = $data[2];
     // connect to database
-    $env = parse_ini_file('../env');
+    $env = parse_ini_file('../.env');
+    echo $env["AZURE_MYSQL_HOST"];
     $conn = mysqli_init();
     if($env["MYSQL_ATTR_SSL_CA"] != NULL){
         mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
-
     }
     mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
     // check if data is already present
