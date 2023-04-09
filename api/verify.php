@@ -14,7 +14,7 @@
     $email = $data[1];
     $mobile = $data[2];
     // connect to database
-    $env = parse_ini_file('.env');
+    $env = parse_ini_file('../env');
     $conn = mysqli_init();
     if($env["MYSQL_ATTR_SSL_CA"] != NULL){
         mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
@@ -59,7 +59,7 @@
         http_response_code($status);
         // set session message
         $_SESSION['message'] = $status_message ;
-        header('location: ../ind.php') ;
+        header('location: ../index.php') ;
         exit();
     }
     function decryptData($data){

@@ -15,7 +15,6 @@ session_start();
 
 echo "hello";
 if (isset($_POST['submit'])) {
-    header('location: Register.php');
     $env = parse_ini_file('.env');
     $con = mysqli_init();
     if($env["MYSQL_ATTR_SSL_CA"] != NULL){
@@ -53,11 +52,11 @@ if (isset($_POST['submit'])) {
             header('location: index.php');
             
             $surl = getImageURL($file);
-            sendVerificationMail($uname, $email, $mobile);
 
             $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss) VALUES ('$uname', '$email', '$mobile', '$college','$surl')";
     
             mysqli_query($con, $query);
+            sendVerificationMail($uname, $email, $mobile);
 
     
         } catch (\Throwable $th) {
@@ -139,7 +138,7 @@ function sendVerificationMail($name, $email, $mobile)
     $mail->isSMTP();
     $mail->Host = 'us2.smtp.mailhostbox.com';
     $mail->SMTPAuth = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Username = 'admin@trystkmv.tech';
     $mail->Password = 'dr(@*DA0';
     $mail->SMTPSecure = 'tls';

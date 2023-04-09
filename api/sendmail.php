@@ -13,7 +13,7 @@
     $mobile = $data[2];
 
     // connect to database
-    $env = parse_ini_file('.env');
+    $env = parse_ini_file('../env');
     $conn = mysqli_init();
     if($env["MYSQL_ATTR_SSL_CA"] != NULL){
         mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
