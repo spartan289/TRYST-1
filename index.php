@@ -17,6 +17,7 @@
 </head>
 
 <body class="main">
+<img src="images/!logo.png" " script="background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;"">
 
   <?php
     // check if a session message is present
@@ -27,10 +28,12 @@
     // pop up the message
     echo "<script>alert('".$_SESSION['message']."');</script>";
     unset($_SESSION['message']);
+
   }
+  session_abort();
   ?>
-  <div class="head"
-    style="background-image: url('images/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
+  <div class="head">
+
     <nav class="position" role="navigation">
       <!-- new -->
       <div id="menuToggle">
