@@ -1,9 +1,11 @@
 body {
 	background-color: hsl(208deg 87% 97%);
 }
-.Events{
-	background-color: rgb(23,77,108);
+
+.Events {
+	background-color: rgb(23, 77, 108);
 }
+
 .position {
 	position: relative;
 }
@@ -74,14 +76,14 @@ h2 {
 .slider {
 	height: 220px;
 	margin: auto;
-	overflow:hidden;
+	overflow: hidden;
 	position: relative;
 	width: 80%;
-	
+
 }
 
 .slider .slide-track {
-	-webkit-animation: scroll 10s linear infinite ;
+	-webkit-animation: scroll 10s linear infinite;
 	animation: scroll 40s linear infinite;
 	display: flex;
 	width: calc(150px * 14);
@@ -189,7 +191,7 @@ nav #icon {
 	display: none;
 	position: relative;
 }
- 
+
 @media (max-width:800px) {
 	label.logo {
 		font-size: 32px;

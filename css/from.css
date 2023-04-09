@@ -9,9 +9,13 @@
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
-#regform{
+
+#regform {
+    margin: auto;
     display: none;
+    width: 50%;
 }
+
 .container .title {
     font-size: 25px;
     font-weight: 500;
@@ -60,18 +64,22 @@ form .input-box span.details {
     font-size: 16px;
     border-radius: 5px;
     padding-left: 15px;
-    border: 1px solid #ccc;
-    border-bottom-width: 2px;
     transition: all 0.3s ease;
 }
 
-.inpimg{
-    width: 45%;
-    color: #fff;
-}
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
     border-color: #9b59b6;
+}
+
+.inpimg {
+    width: 45%;
+    color: #fff;
+}
+
+.inpimg:focus,
+.inpimg:valid {
+    border: none;
 }
 
 form .category {
@@ -88,7 +96,7 @@ form .category label {
 
 form .button {
     height: 45px;
-    margin: 35px 0
+    margin: 35px 0;
 }
 
 form .button input {
@@ -109,13 +117,15 @@ form .button input:hover {
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 
-@media(max-width: 584px) {
+@media(max-width: 800px) {
+
     /* .container {
         width: 80%;
     } */
-    .inpimg{
+    .inpimg {
         width: 100%;
     }
+
     .from input {
         color: black;
     }
@@ -124,6 +134,13 @@ form .button input:hover {
         margin-bottom: 15px;
         width: 100%;
     }
+
+    #regform {
+        margin: none;
+        display: none;
+        width: 100%;
+    }
+
 }
 
 @media(max-width: 459px) {
@@ -135,44 +152,61 @@ form .button input:hover {
 
 
 /* STEPS */
-.process .head{
+.process .head {
     text-align: center;
-    font-family:cambria ;
+    font-family: cambria;
     font-size: 30px;
     color: white;
     text-decoration: underline;
-   }
-   .step{
+}
+
+.step {
     margin: auto;
     padding: 6px;
     border: 2px solid black;
     border-radius: 15px;
     background-color: rgb(172, 200, 244);
-    width: 80%;
-   }
-   .note{
+    width: 50%;
+}
+
+.note {
     background-color: rgba(198, 221, 240, 0.472);
     font-family: cochin;
     font-size: 20px;
-    margin: 5%;
-   }
-   .process h1{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+.process h1 {
     font-family: 'Times New Roman';
     color: rgb(111, 107, 110);
-   }
-   .bt{
+}
+
+.bt {
     margin: auto;
     background-color: rgba(134, 190, 212, 0.986);
     border: 2px solid;
-    border-radius:5px;
+    border-radius: 5px;
     padding: 10px;
     width: 220px;
-    font-family:'Times New Roman';
+    font-family: 'Times New Roman';
     font-size: 25px;
-   }
+    color: #ffffff;
+}
 
-   #QR{
-    width: 50%;
+#QR {
+    width: 20%;
     margin: auto;
     margin-bottom: 20px;
-   }
+}
+
+@media(max-width: 800px) {
+    #QR {
+        width: 50%;
+    }
+
+    .step {
+        width: 80%;
+    }
+}

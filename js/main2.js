@@ -24,17 +24,6 @@ function ShowSE(ID) {
     document.getElementById("AE").style.display = "none";
     document.getElementById("foot").style.display = "none";
     document.getElementById(elem).style.display = "block";
-
-    // if (ID == 1) {
-    //     document.getElementById("AE").style.display = "none";
-    //     document.getElementById("foot").style.display = "none";
-    //     document.getElementById("SE-1").style.display = "block";
-    // }
-    // else {
-    //     document.getElementById("AE").style.display = "none";
-    //     document.getElementById("foot").style.display = "none";
-    //     document.getElementById("SE").style.display = "block";
-    // }
     window.history.pushState({ id: 1 }, null, "?q=1234&u=beware");
 }
 function handelBack() {
