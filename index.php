@@ -48,7 +48,7 @@
           but hey, it's pure CSS magic.
         -->
         <ul id="menu">
-          <a class="active" href="frontpage.html">
+          <a class="active" href="index.php">
             <li>Home</li>
           </a>
           <a href="Main_Events.html">
@@ -57,7 +57,7 @@
           <a href="Sponsor.html">
             <li>Sponsors</li>
           </a>
-          <a href="Register.html">
+          <a href="Register.php">
             <li>Register</li>
           </a>
           <a href="team.html">
@@ -71,10 +71,10 @@
       <a href="frontpage.html"><label class="logo"> TRYST'23</a>
       </label>
       <ul class="options">
-        <li><a class="active" href="frontpage.html">Home </a> </li>
+        <li><a class="active" href="index.php">Home </a> </li>
         <li><a href="Main_Events.html">Events</a> </li>
         <li><a href="Sponsor.html">Sponsors</a> </li>
-        <li><a href="Register.html">Register</a> </li>
+        <li><a href="Register.php">Register</a> </li>
         <li><a href="team.html">Contact Us</a> </li>
         <li><a href="Aboutus.html">About Us </a> </li>
       </ul>
