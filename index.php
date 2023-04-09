@@ -68,7 +68,7 @@
           </a>
         </ul>
       </div>
-      <a href="frontpage.html"><label class="logo"> TRYST'23</a>
+      <a href="index.php"><label class="logo"> TRYST'23</a>
       </label>
       <ul class="options">
         <li><a class="active" href="index.php">Home </a> </li>
@@ -110,6 +110,13 @@
     <br>
     <br>
     <br>
+    <div class="CTR">
+      <span id="HD">
+        <a href="Register.html">
+          <button class="bt" onclick="viewform()">Register Here</button>
+        </a>
+      </span>
+    </div>
     <br>
   </div>
 

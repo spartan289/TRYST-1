@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/common.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<canvas id="canvas"></canvas>
 
 <body
   style="background-image: url('images/!logo.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
@@ -32,7 +31,7 @@
             but hey, it's pure CSS magic.
           -->
       <ul id="menu">
-        <a href="index">
+        <a href="index.php">
           <li>Home</li>
         </a>
         <a href="Main_Events.html">
@@ -52,7 +51,7 @@
         </a>
       </ul>
     </div>
-    <a href="frontpage.html"><label class="logo"> TRYST'23</a>
+    <a href="index.php"><label class="logo"> TRYST'23</a>
     </label>
     <ul class="options">
       <li><a href="index.php">Home </a> </li>
@@ -76,6 +75,7 @@
       Scan the following QR to download the "Adda 52" app and register yourself on the app. <br><br>
 
       <img id="QR" src="images/QR_AddA52.jpg">
+      ♠♠♠ or tap <a href="https://adda52.onelink.me/gdWi/ejm19vlx?af_qr=true" target="_blank" style="color: blue;">here</a> to downlaod the app ♠♠♠
     </div>
     <div class="step">
       <h1> <b> Step 2: </b></h1>
@@ -123,7 +123,10 @@ session_start();
               <span class="details">College Name</span>
               <input type="text" placeholder="Enter College Name" name="college" required>
             </div>
-
+            <div class="input-box">
+              <span class="details">College Roll Number</span>
+              <input type="text" placeholder="Enter your name" name="rollno" required>
+            </div>
             <div class="input-box">
               <span class="details">Mobile Number</span>
               <input type="text" placeholder="Enter Mobile Number" name="mobile" required>
