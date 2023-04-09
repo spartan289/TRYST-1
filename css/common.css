@@ -4,20 +4,23 @@ body {
   background-color: #000000;
 }
 
-.CTR{
+.CTR {
   display: flex;
   height: 60px;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
-#HD{
-  width: max-content;
-  margin: auto;
-  color: #ffffff;
-  font-size: 2.5rem;
+
+#HD {
+  font-family:"Playfair Display";
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: rgb(228, 227, 225);
 }
+
 .fg-img {
   position: absolute;
   top: 40%;
@@ -87,8 +90,8 @@ nav a {
   border-radius: 3px;
 }
 
-a.active,
-a:hover {
+nav a.active,
+nav a:hover {
   border: 1px solid white;
   transition: .5s;
 }
@@ -353,8 +356,8 @@ nav #icon {
   transform-origin: 4px 0px;
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-      opacity 0.55s ease;
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -426,8 +429,16 @@ nav #icon {
 
 @media (max-width:800px) {
   #menuToggle {
-      display: block;
-      width: 10%;
+    display: block;
+    width: 10%;
   }
 
+}
+
+@media (max-width: 370px) {
+  #HD {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(225, 225, 225);
+  }
 }
