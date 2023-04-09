@@ -97,7 +97,14 @@
   </div>
 
 
+<?php
+session_start();
+ if($_SESSION['message']){
+  //alert message
+  echo "<script>alert('".$_SESSION['message']."');</script>";
 
+  unset($_SESSION['message']);
+} ?>
 
 
 

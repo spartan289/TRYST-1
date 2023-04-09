@@ -53,11 +53,11 @@ if (isset($_POST['submit'])) {
             header('location: index.php');
             
             $surl = getImageURL($file);
-    
+            sendVerificationMail($uname, $email, $mobile);
+
             $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss) VALUES ('$uname', '$email', '$mobile', '$college','$surl')";
     
             mysqli_query($con, $query);
-            sendVerificationMail($uname, $email, $mobile);
 
     
         } catch (\Throwable $th) {
@@ -138,6 +138,7 @@ function sendVerificationMail($name, $email, $mobile)
     $mail->isSMTP();
     $mail->Host = 'smtp.office365.com';
     $mail->SMTPAuth = true;
+    $mail->SMTPDebug = 2;
     $mail->Username = 'sagarpc2020@outlook.com';
     $mail->Password = 'Sagar@9398';
     $mail->SMTPSecure = 'tls';

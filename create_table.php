@@ -10,8 +10,8 @@ try {
     }
     mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
 
-
-    $query = "ALTER TABLE `tryst_info` MODIFY `index` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2 ;" ;
+    //query truncate
+    $query = "TRUNCATE TABLE `tryst_info`";
     mysqli_query($conn, $query) ;
 
     $query = "COMMIT";
