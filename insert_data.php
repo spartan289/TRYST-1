@@ -62,7 +62,8 @@ if (isset($_POST['submit'])) {
     
         } catch (\Throwable $th) {
             //throw $th;
-            header('location: Register.php');
+            echo $th;
+            // header('location: Register.php');
         }
     }
     mysqli_close($con);
