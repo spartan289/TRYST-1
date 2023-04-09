@@ -15,28 +15,30 @@
     $mobile = $data[2];
     // connect to database
     $env = parse_ini_file('../.env');
-    echo $env["AZURE_MYSQL_HOST"];
     $conn = mysqli_init();
     if($env["MYSQL_ATTR_SSL_CA"] != NULL){
-        mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
+
+        mysqli_ssl_set($conn,NULL,NULL, "../".$env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
     }
+
     mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
     // check if data is already present
     $query = "SELECT * FROM `tryst_info` WHERE (cmobile = '$mobile' or c_mailId = '$email')" ;
     $result = mysqli_query($conn, $query) ;
     if(mysqli_num_rows($result) > 0) {
         //check if c_attended is True
+
         $query = "SELECT * FROM `tryst_info` WHERE (cmobile = '$mobile' or c_mailId = '$email') and is_verified=True" ;
         $result = mysqli_query($conn, $query) ;
         if(mysqli_num_rows($result) > 0) {
             // send response with 200 status code
+
             response(201,"Already Verified",NULL);
         }
         else{
             $query = "UPDATE `tryst_info` SET is_verified=True WHERE (cmobile = '$mobile' or c_mailId = '$email') and is_verified=False" ;
             $result = mysqli_query($conn, $query) ;
             // send response with 200 status code
-    
             response(200,"Verified",NULL);
     
         }
@@ -55,10 +57,9 @@
     {
         // start seesion
         session_start();
-        // set response code
-        http_response_code($status);
-        // set session message
-        $_SESSION['message'] = $status_message ;
+                // set session message
+        $_SESSION['message'] = $status_message;
+
         header('location: ../index.php') ;
         exit();
     }

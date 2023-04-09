@@ -48,8 +48,6 @@ if (isset($_POST['submit'])) {
     } else {
         try {
             //code...
-            $_SESSION['message'] = "Verification Mail has been sent verify to get Ticket Faster";
-            header('location: index.php');
             
             $surl = getImageURL($file);
 
@@ -57,7 +55,10 @@ if (isset($_POST['submit'])) {
     
             mysqli_query($con, $query);
             sendVerificationMail($uname, $email, $mobile);
+            $_SESSION['message'] = "Verification Mail has been sent verify to get Ticket Faster";
+            header('location: index.php');
 
+            exit();
     
         } catch (\Throwable $th) {
             //throw $th;

@@ -30,13 +30,14 @@
         // code to send mail
         $mail = new PHPMailer;
         $mail->isSMTP();
-        $mail->Host = 'smtp.office365.com';
+        $mail->Host = 'us2.smtp.mailhostbox.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'sagarpc2020@outlook.com';
-        $mail->Password = 'Sagar@9398';
+        // $mail->SMTPDebug = 2;
+        $mail->Username = 'admin@trystkmv.tech';
+        $mail->Password = 'dr(@*DA0';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->setFrom('sagarpc2020@outlook.com', 'Sagar');
+        $mail->setFrom('admin@trystkmv.tech', 'Sagar');
         $mail->addAddress($email, $name);
     
         $mail->isHTML(true);
