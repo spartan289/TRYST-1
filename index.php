@@ -16,10 +16,9 @@
   <title> TRYST'23 </title>
 </head>
 
-<canvas id="canvas"></canvas>
-
 <body class="main">
-    <?php
+
+  <?php
     // check if a session message is present
     session_start();
     
@@ -58,7 +57,7 @@
           <a href="Sponsor.html">
             <li>Sponsors</li>
           </a>
-          <a href="Register.php">
+          <a href="Register.html">
             <li>Register</li>
           </a>
           <a href="team.html">
@@ -75,7 +74,7 @@
         <li><a class="active" href="frontpage.html">Home </a> </li>
         <li><a href="Main_Events.html">Events</a> </li>
         <li><a href="Sponsor.html">Sponsors</a> </li>
-        <li><a href="Register.php">Register</a> </li>
+        <li><a href="Register.html">Register</a> </li>
         <li><a href="team.html">Contact Us</a> </li>
         <li><a href="Aboutus.html">About Us </a> </li>
       </ul>
@@ -272,7 +271,7 @@
           <a href="" target="_blank"><img
               src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-128.png"
               alt=""></a>
-          <a href="" target="_blank"><img
+          <a href="https://www.instagram.com/tryst.kmv/" target="_blank"><img
               src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
               alt=""></a>
           <a href="" target="_blank"><img
