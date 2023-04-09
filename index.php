@@ -16,11 +16,9 @@
   <title> TRYST'23 </title>
 </head>
 
-<canvas id="canvas"></canvas>
-
 <body class="main">
-  <!-- check if a session message is present
-    <?php
+
+  <?php
     // check if a session message is present
     session_start();
     
@@ -30,7 +28,7 @@
     echo "<script>alert('".$_SESSION['message']."');</script>";
     unset($_SESSION['message']);
   }
-  ?> -->
+  ?>
   <div class="head"
     style="background-image: url('images/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
     <nav class="position" role="navigation">
@@ -280,7 +278,7 @@
           <a href="" target="_blank"><img
               src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-128.png"
               alt=""></a>
-          <a href="" target="_blank"><img
+          <a href="https://www.instagram.com/tryst.kmv/" target="_blank"><img
               src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
               alt=""></a>
           <a href="" target="_blank"><img

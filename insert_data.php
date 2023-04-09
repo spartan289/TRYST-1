@@ -13,7 +13,6 @@ require 'utils.php';
 
 session_start();
 
-echo "hello";
 if (isset($_POST['submit'])) {
     $env = parse_ini_file('.env');
     $con = mysqli_init();
@@ -43,7 +42,7 @@ if (isset($_POST['submit'])) {
     if (mysqli_num_rows($result) > 0) {
         // set message to registration.html
         $_SESSION['message'] = 'Mobile number or Email already registered';
-        header('location: Register.php');
+        header('location: /Register.php');
         exit();
     } else {
         try {
@@ -56,7 +55,7 @@ if (isset($_POST['submit'])) {
             mysqli_query($con, $query);
             sendVerificationMail($uname, $email, $mobile);
             $_SESSION['message'] = "Verification Mail has been sent verify to get Ticket Faster";
-            header('location: index.php');
+            header('location: /index.php');
 
             exit();
     
@@ -74,7 +73,6 @@ function getImageURL($file)
 
     $check = getimagesize($file["tmp_name"]);
     if ($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
         $fileName = $file["name"];
         compressImage($file['tmp_name'], $file['tmp_name']);
@@ -95,7 +93,7 @@ function getImageURL($file)
         $blobUrl = $blobClient->getBlobUrl($containerName, $fileName);
         return $blobUrl;
     } else {
-        echo "File is not an image.";
+        // echo "File is not an image.";
         $uploadOk = 0;
         return null;
     }
@@ -153,9 +151,7 @@ function sendVerificationMail($name, $email, $mobile)
     $mail->AltBody = 'This is a verification email';
 
     if (!$mail->send()) {
-        echo 'Message could not be sent.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
+        // echo 'Message could not be sent.';
     } else {
-        echo 'Message has been sent';
     }
 }
