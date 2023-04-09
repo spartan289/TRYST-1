@@ -12,9 +12,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <img src="images/!logo.png" " script="background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;"">
-  
+<body
+  style="background-image: url('images/!logo.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
   <nav class="position" role="navigation">
     <!-- new -->
     <div id="menuToggle">
@@ -100,12 +99,12 @@
 
 <?php
 session_start();
-if(isset($_SESSION['message'])){
-  // pop up the message
+ if($_SESSION['message']){
+  //alert message
   echo "<script>alert('".$_SESSION['message']."');</script>";
+
   unset($_SESSION['message']);
-}
-session_abort(); ?>
+} ?>
 
 
 
