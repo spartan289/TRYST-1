@@ -14,9 +14,20 @@ try {
     $query = "TRUNCATE TABLE `tryst_info`";
     mysqli_query($conn, $query) ;
 
+    // show  data
+    $query = "SELECT * FROM `tryst_info`";
+    $result = mysqli_query($conn, $query) ;
+    $row = mysqli_fetch_assoc($result);
+  //print entire array
+    print_r($row);
+
+
+
+
+
     $query = "COMMIT";
     mysqli_query($conn, $query) ;
-
+    mysqli_close($conn);
 
 
 } catch (\Throwable $th) {
