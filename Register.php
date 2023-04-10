@@ -67,7 +67,7 @@
   <div id="process" class="process">
     <div>
       <div class="CTR">
-        <span id="HD">Registration Process</span>
+        <span id="HD">Registration</span>
       </div>
     </div>
     <div class="step">
