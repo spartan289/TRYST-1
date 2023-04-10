@@ -110,6 +110,7 @@
     <br>
     <br>
     <br>
+    <a href="Register.php">
     <div class="CTR">
       <span id="HD">
         <a href="Register.html">
@@ -117,6 +118,7 @@
         </a>
       </span>
     </div>
+    </a>
     <br>
   </div>
 
