@@ -110,13 +110,15 @@
     <br>
     <br>
     <br>
+    <a href="Register.php">
     <div class="CTR">
       <span id="HD">
-        <a href="Register.html">
+        <a href="Register.php">
           <button class="bt" onclick="viewform()">Register Here</button>
         </a>
       </span>
     </div>
+    </a>
     <br>
   </div>
 
@@ -289,9 +291,8 @@
         <div>
           For any queries contact us at :
           <div class="email">
-            <a href="" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt=""></a>
-            <span>trystOC@gmail.com</span>
-
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
+            <span>tryst.2k23@gmail.com</span>
           </div>
         </div>
       </div>
