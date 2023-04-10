@@ -179,10 +179,9 @@ session_start();
       <div>
         For any queries contact us at :
         <div class="email">
-          <a href="" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt=""></a>
-          <span>trystOC@gmail.com</span>
-
-        </div>
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
+            <span>tryst.2k23@gmail.com</span>
+          </div>
       </div>
     </div>
   </footer>
