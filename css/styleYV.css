@@ -343,16 +343,19 @@ ul li a {
 }
 
 .carddiv h2,
-.carddiv h3 {
+h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   font-family: cursive;
+  color:white;
   text-shadow: 1px 1px 2px rgb(255, 0, 153), 0 0 25px rgb(19, 103, 214), 0 0 5px rgb(12, 3, 124);
   font-weight: bold;
 }
-
+.carddiv h3{
+  font-size:1.5rem;
+}
 .connect {
   display: flex;
   justify-content: center;
