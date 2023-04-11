@@ -33,8 +33,8 @@
         $mail->Host = 'us2.smtp.mailhostbox.com';
         $mail->SMTPAuth = true;
         // $mail->SMTPDebug = 2;
-        $mail->Username = 'admin@trystkmv.tech';
-        $mail->Password = 'dr(@*DA0';
+        $mail->Username = 'sagar@trystkmv.tech';
+        $mail->Password = 'tzceevf9';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
         $mail->setFrom('admin@trystkmv.tech', 'Sagar');

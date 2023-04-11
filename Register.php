@@ -99,7 +99,7 @@
 
 <?php
 session_start();
- if($_SESSION['message']){
+ if(isset($_SESSION['message'])){
   //alert message
   echo "<script>alert('".$_SESSION['message']."');</script>";
 

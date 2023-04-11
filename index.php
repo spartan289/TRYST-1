@@ -21,7 +21,8 @@
   <?php
     // check if a session message is present
     session_start();
-    
+    // unset($_SESSION['message']);
+
     
   if(isset($_SESSION['message'])){
     // pop up the message

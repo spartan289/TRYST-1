@@ -11,9 +11,10 @@ use MicrosoftAzure\Storage\Blob\Models\CreateBlockBlobOptions;
 require 'utils.php';
 
 
-session_start();
 
 if (isset($_POST['submit'])) {
+    session_start();
+
     $env = parse_ini_file('.env');
     $con = mysqli_init();
     if($env["MYSQL_ATTR_SSL_CA"] != NULL){
@@ -41,31 +42,29 @@ if (isset($_POST['submit'])) {
     $result = mysqli_query($con, $query);
     if (mysqli_num_rows($result) > 0) {
         // set message to registration.html
+   
         $_SESSION['message'] = 'Mobile number or Email already registered';
+        mysqli_close($con);
+
         header('location: /Register.php');
         exit();
+
     } else {
-        try {
             //code...
             
             $surl = getImageURL($file);
 
             $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss) VALUES ('$uname', '$email', '$mobile', '$college','$surl')";
-    
-            mysqli_query($con, $query);
             sendVerificationMail($uname, $email, $mobile);
-            $_SESSION['message'] = "Verification Mail has been sent verify to get Ticket Faster";
-            header('location: /index.php');
 
+            mysqli_query($con, $query);
+            $_SESSION['message'] = "Verification Mail has been sent verify to get Ticket Faster";
+            mysqli_close($con);
+
+            header('location: /');
             exit();
-    
-        } catch (\Throwable $th) {
-            //throw $th;
-            echo $th;
-            // header('location: Register.php');
-        }
+
     }
-    mysqli_close($con);
 
 }
 function getImageURL($file)
@@ -135,14 +134,14 @@ function sendVerificationMail($name, $email, $mobile)
     // code to send mail
     $mail = new PHPMailer;
     $mail->isSMTP();
-    $mail->Host = 'us2.smtp.mailhostbox.com';
+    $mail->Host = 'us2.smtp.mailhostbox.com	';
     $mail->SMTPAuth = true;
     // $mail->SMTPDebug = 2;
-    $mail->Username = 'admin@trystkmv.tech';
-    $mail->Password = 'dr(@*DA0';
+    $mail->Username = 'sagar@trystkmv.tech';
+    $mail->Password = 'tzceevf9';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
-    $mail->setFrom('admin@trystkmv.tech', 'Sagar');
+    $mail->setFrom('sagar@trystkmv.tech', 'Sagar');
     $mail->addAddress($email, $name);
 
     $mail->isHTML(true);
@@ -151,7 +150,7 @@ function sendVerificationMail($name, $email, $mobile)
     $mail->AltBody = 'This is a verification email';
 
     if (!$mail->send()) {
-        // echo 'Message could not be sent.';
     } else {
+        //display error message
     }
 }
