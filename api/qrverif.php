@@ -42,7 +42,7 @@ if(!empty($_GET['data'])){
             response(201,"Already Verified",NULL);
         }
         else{
-            $query = "UPDATE `tryst_info` SET c_attended=True WHERE (cmobile = '$mobile' or c_mailId = '$email') and is_verified=False" ;
+            $query = "UPDATE `tryst_info` SET c_attended=True WHERE (cmobile = '$mobile' or c_mailId = '$email')";
             $result = mysqli_query($conn, $query) ;
             // send response with 200 status code
             response(200,"Verified",NULL);
