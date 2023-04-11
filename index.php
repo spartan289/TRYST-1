@@ -110,15 +110,6 @@
     <br>
     <br>
     <br>
-    <a href="Register.php">
-    <div class="CTR">
-      <span id="HD">
-        <a href="Register.php">
-          <button class="bt" onclick="viewform()">Register Here</button>
-        </a>
-      </span>
-    </div>
-    </a>
     <br>
   </div>
 
