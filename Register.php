@@ -99,7 +99,7 @@
 
 <?php
 session_start();
- if($_SESSION['message']){
+ if(isset($_SESSION['message'])){
   //alert message
   echo "<script>alert('".$_SESSION['message']."');</script>";
 
@@ -113,6 +113,7 @@ session_start();
     <div class="container">
       <div class="title">Registration</div>
       <div class="content">
+        <h3> A Verification Mail will be sent to email id</h3>
         <form action="insert_data.php" method="post" enctype="multipart/form-data">
           <div class="user-details">
             <div class="input-box">

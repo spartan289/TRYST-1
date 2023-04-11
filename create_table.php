@@ -10,16 +10,15 @@ try {
     }
     mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
 
-    //query truncate
-    $query = "TRUNCATE TABLE `tryst_info`";
-    mysqli_query($conn, $query) ;
+    // // // //query truncate
+    // $query = "TRUNCATE TABLE `tryst_info`";
+    // mysqli_query($conn, $query) ;
 
     // show  data
     $query = "SELECT * FROM `tryst_info`";
     $result = mysqli_query($conn, $query) ;
-    $row = mysqli_fetch_assoc($result);
-  //print entire array
-    print_r($row);
+    $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    echo json_encode($data);
 
 
 
