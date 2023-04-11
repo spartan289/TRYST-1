@@ -37,9 +37,8 @@
         $mail->Password = 'tzceevf9';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->setFrom('admin@trystkmv.tech', 'Sagar');
+        $mail->setFrom('sagar@trystkmv.tech', 'Sagar');
         $mail->addAddress($email, $name);
-    
         $mail->isHTML(true);
         $mail->Subject = 'Test Email';
         $mail->Body = 'This is a test email';

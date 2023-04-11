@@ -16,7 +16,8 @@
     $env = parse_ini_file('../.env');
     $conn = mysqli_init();
     if($env["MYSQL_ATTR_SSL_CA"] != NULL){
-        mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
+
+        mysqli_ssl_set($conn,NULL,NULL, "../".$env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
     }
     mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
 
@@ -24,7 +25,16 @@
     sendMail($name,$email,$mobile);
     mysqli_query($conn, $query) ;
     mysqli_close($conn);
+    function response($status,$status_message,$data)
+    {
+        // start seesion
+        session_start();
+                // set session message
+        $_SESSION['message'] = $status_message;
 
+        header('location: ../index.php') ;
+        exit();
+    }
     exit();
     
 ?>
