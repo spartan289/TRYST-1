@@ -110,17 +110,6 @@
     <br>
     <br>
     <br>
-    <br>
-    <a href="Register.php">
-    <div class="CTR">
-      <span id="HD">
-        <a href="Register.php">
-          <button class="bt" onclick="viewform()">Register Here</button>
-        </a>
-      </span>
-    </div>
-    </a>
-    <br>
   </div>
 
   <div class="Events">
@@ -129,66 +118,70 @@
       <h1 class="position heading2">EVENTS
       </h1>
       <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-14">
           <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/600x360">
+            <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
+              src="images/event/anhad.jpeg">
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
               id="position">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-              <p class="leading-relaxed">Get set to unleash your inner talent and fle your expertise in tyrst'23. </p>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">BATTLE OF BANDS </h1>
+              <p class="leading-relaxed">It's an opportunity for musicians to experiment with their
+                    instruments and create new sounds and push the boundaries of traditional
+                    music and explore new genres. </p>
             </div>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-14">
           <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/601x361">
+            <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
+              src="images\event\mostrar.png">
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-green-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">PRO NITE 1 </h1>
+              <p class="leading-relaxed "> Get set to unleash your inner talent and fle your expertise in tyrst'23.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-14">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full object-cover object-center "
+              src="images/event/envinceF.jpeg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">EVINCE: FASHION SHOW</h1>
+              <p class="leading-relaxed ">A platform for participants to tell a story through fashion,
+                     creatively crafted by their teams, and manifested through confidence, design. </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/3 sm:w-1/2 p-14">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
+              src="images\event\Nrityang.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3"> UTHAAN</h1>
+              <p class="leading-relaxed"> dance competition ,a stage to the dancers to showcase their skills and 
+                provides a unique opportunity to witness the beauty and athleticism of western dance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-14">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
+              src="images\event\advaiitaa .png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">PRO NITE 2</h1>
               <p class="leading-relaxed"> Get set to unleash your inner talent and fle your expertise in tyrst'23.</p>
             </div>
           </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
+        </div>     
+        <div class="lg:w-1/3 sm:w-1/2 p-14">
           <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/603x363">
+            <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
+              src="images\event\vagmita.jpg">
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-green-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-              <p class="leading-relaxed">Get set to unleash your inner talent and fle your expertise in tyrst'23. </p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/602x362">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-              <p class="leading-relaxed"> Get set to unleash your inner talent and fle your expertise in tyrst'23.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/605x365">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
-              <p class="leading-relaxed"> Get set to unleash your inner talent and fle your expertise in tyrst'23.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/606x366">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-              <p class="leading-relaxed"> Get set to unleash your inner talent and fle your expertise in tyrst'23.</p>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">IRSHAAD</h1>
+              <p class="leading-relaxed">a platform for poets to showcase their talent and express themselves in front
+                 of an enthusiastic audience and celebrate the beauty of the languages.</p>
             </div>
           </div>
         </div>
@@ -207,43 +200,31 @@
         <div class="slide-track">
           <!-- Img Code -->
           <div class="slide">
-            <img src="images/AITANK.webp" />
+            <img src="images\sponsors\adda52.png">
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/AITANK.webp" />
-          </div>
-          &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-          <div class="slide">
-            <img src="images/AITANK.webp" />
+            <img src="images\sponsors\oliveGold.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/AITANK.webp" />
+            <img src="images\sponsors\BeReal.png" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/AITANK.webp" />
+            <img src="images\sponsors\adda52.png" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/AITANK.webp" />
+            <img src="images\sponsors\oliveGold.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/AITANK.webp" />
+            <img src="images\sponsors\adda52.png" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/AITANK.webp" />
-          </div>
-          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-          <div class="slide">
-            <img src="images/AITANK.webp" />
-          </div>
-          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-          <div class="slide">
-            <img src="images/AITANK.webp" />
+            <img src="images\sponsors\BeReal.png" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
         </div>
@@ -258,47 +239,34 @@
 
 
     <footer class="footer" style="position: relative;" id="foot">
-
-      <div class="b" style="display: flex;">
-
-        <div id="adrs">
-          KESHAV MAHAVIDYALAYA <br> (University of Delhi)
-          <br>H-4-5 Zone, Pitampura,<br> Near Sainik Vihar, Delhi-110034 <br>
+    <div class="b" style="display: flex;">
+      <div id="adrs">
+        KESHAV MAHAVIDYALAYA <br> (University of Delhi)<br>H-4-5 Zone, Pitampura,<br> Near Sainik Vihar,
+        Delhi-110034 <br>
+      </div>
+    </div>
+    <div class="a">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14000.250902147813!2d77.1202477!3d28.6877702!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03c34fb126e3%3A0xb857945e72aca18!2sKeshav%20Mahavidyalaya!5e0!3m2!1sen!2sin!4v1680190395920!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="c">
+      <span>Follow US!</span>
+      <ul class="ftlist">
+        <a href="https://www.instagram.com/tryst.kmv/" target="_blank"><img
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
+            alt=""></a>
+      </ul>
+      For any queries contact us at :
+      <div>
+        <div class="email">
+          <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
+          <span>tryst.2k23@gmail.com</span>
         </div>
       </div>
-      <div class="a">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14000.250902147813!2d77.1202477!3d28.6877702!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03c34fb126e3%3A0xb857945e72aca18!2sKeshav%20Mahavidyalaya!5e0!3m2!1sen!2sin!4v1680190395920!5m2!1sen!2sin"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="c">
-        <span>Follow US!</span>
-        <ul class="ftlist">
-          <a href="" target="_blank"><img
-              src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-128.png"
-              alt=""></a>
-          <a href="" target="_blank"><img
-              src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-128.png"
-              alt=""></a>
-          <a href="https://www.instagram.com/tryst.kmv/" target="_blank"><img
-              src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
-              alt=""></a>
-          <a href="" target="_blank"><img
-              src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png"
-              alt=""></a>
-        </ul>
-
-        <div>
-          For any queries contact us at :
-          <div class="email">
-            <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
-            <span>tryst.2k23@gmail.com</span>
-          </div>
-        </div>
-      </div>
-      <br>
-    </footer>
+    </div>
+  </footer>
   </div>
   <script src="js/main2.js"></script>
 </body>

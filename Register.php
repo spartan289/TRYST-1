@@ -165,24 +165,16 @@ session_start();
     <div class="c">
       <span>Follow US!</span>
       <ul class="ftlist">
-        <a href="" target="_blank"><img
-            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-128.png" alt=""></a>
-        <a href="" target="_blank"><img
-            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-128.png"
-            alt=""></a>
-        <a href="" target="_blank"><img
+        <a href="https://www.instagram.com/tryst.kmv/" target="_blank"><img
             src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
             alt=""></a>
-        <a href="" target="_blank"><img
-            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png"
-            alt=""></a>
       </ul>
+      For any queries contact us at :
       <div>
-        For any queries contact us at :
         <div class="email">
-            <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
-            <span>tryst.2k23@gmail.com</span>
-          </div>
+          <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
+          <span>tryst.2k23@gmail.com</span>
+        </div>
       </div>
     </div>
   </footer>
