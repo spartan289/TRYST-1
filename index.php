@@ -126,7 +126,7 @@
               src="https://dummyimage.com/600x360">
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
               id="position">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">BAITHAK </h1>
               <p class="leading-relaxed">Get set to unleash your inner talent and fle your expertise in tyrst'23. </p>
             </div>
           </div>
