@@ -228,15 +228,6 @@ div.email {
   display: block;
 }
 
-.email img {
-  margin: none;
-  float: left;
-}
-
-.email span {
-  float: right;
-}
-
 #map {
   height: 400px;
   width: 400px;
@@ -288,6 +279,12 @@ div.email {
   #adrs {
     margin: 0px;
     margin-bottom:15px ;
+  }
+  .email img{
+    float: left;
+  }
+  .email span {
+    float: right;
   }
 }
 
