@@ -130,7 +130,20 @@ function sendVerificationMail($name, $email, $mobile)
     require 'vendor/autoload.php';
     $verif_link = 'https://tryst.azurewebsites.net/api/verify.php?data=' . encryptData($name, $email, $mobile);
 
-    $verif_mail = ' <h1>Verification Email</h1> <br> <p>Click on the link to verify your email</p> <br> <a href="' . $verif_link . '">Click here to verify your email</a>';
+    $Body = "Dear Recipient,<br><br>
+
+    Thank you for signing up for Tryst. We just need to verify your email address to complete the registration process. </br>
+    To do so, please click on the following link for verification : ".$verif_link.".</br>
+    
+    We value your privacy and security and want to ensure that this email and verification </br>
+    link are not misidentified as spam. Please add our email address to your contacts list and</br>
+     mark this email as 'not spam' to ensure that you receive all future communications from us.</br>
+    
+    If you have any questions or concerns, please do not hesitate to contact us.</br>
+     Thank you for choosing our service, and we look forward to serving you.</br></br>
+    
+    Best regards,</br>
+    Tryst 2023</br>";
     // code to send mail
     $mail = new PHPMailer;
     $mail->isSMTP();
@@ -145,9 +158,8 @@ function sendVerificationMail($name, $email, $mobile)
     $mail->addAddress($email, $name);
 
     $mail->isHTML(true);
-    $mail->Subject = 'Verification Email';
-    $mail->Body = $verif_mail;
-    $mail->AltBody = 'This is a verification email';
+    $mail->Subject = 'Tryst`23 Verification Email';
+    $mail->Body = $Body;
 
     if (!$mail->send()) {
     } else {
