@@ -1,7 +1,14 @@
 body {
+  background-image: url('images/!logo.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+
+
+  background-color: black;
   margin: 0;
   padding: 0;
-  background-color: #000000;
 }
 
 .CTR {
@@ -15,7 +22,7 @@ body {
 }
 
 #HD {
-  font-family:"Playfair Display";
+  font-family: "Playfair Display";
   font-size: 70px;
   margin-bottom: 30px;
   color: rgb(228, 227, 225);
@@ -34,14 +41,6 @@ body {
   width: 100%;
   /* Change this value to adjust the size of the foreground image */
   height: auto;
-}
-
-canvas {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 nav a {
@@ -90,8 +89,6 @@ nav a {
   border-radius: 3px;
 }
 
-/* nav a.active,
-nav a:hover { */
 nav a.active {
   border: 1px solid white;
   transition: .5s;
@@ -173,13 +170,15 @@ nav #icon {
 .ftlist {
   display: flex;
   flex-direction: row;
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
 }
 
 .a,
 .b,
 .c {
   font-size: larger;
-  margin-top: px;
 }
 
 .a a {
@@ -190,12 +189,17 @@ nav #icon {
 .a {
   color: rgb(248, 97, 83);
   width: 45%;
+  margin-top: 20px;
 }
 
 .b {
   color: rgba(246, 217, 51, 0.912);
-  width: 25%;
-  margin-left: 40px;
+  width: 33%;
+}
+#adrs {
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom:130px ;
 }
 
 .a iframe {
@@ -215,23 +219,22 @@ nav #icon {
 
 .c img {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin: auto;
   height: 40px;
-  margin-left: 30px;
-  margin-right: 10px;
 }
 
-.email {
-  display: flex;
+div.email {
+  margin-top: 20px;
+  display: block;
 }
 
 .email img {
-  margin-left: 15%;
+  margin: none;
+  float: left;
 }
 
 .email span {
-  margin-top: 20px;
-  margin-left: 15px;
+  float: right;
 }
 
 #map {
@@ -239,18 +242,13 @@ nav #icon {
   width: 400px;
 }
 
-#adrs {
-  margin-top: 40px;
-  margin-left: 25px;
-}
 
 @media (max-width: 800px) {
   .footer {
     flex-direction: column;
     align-items: center;
-    height: 540px;
+    height: 600px;
   }
-
   .a,
   .b,
   .c {
@@ -260,33 +258,36 @@ nav #icon {
   }
 
   .b {
-    margin-top: 5px;
-    margin: auto;
+    margin: 0px;
   }
-
+  
   .ftlist {
     display: flex;
     width: max-content;
     flex-direction: row;
     margin: auto;
   }
-
+  
   .c {
     height: 20px;
     margin: auto;
     width: max-content;
     margin-top: 10px;
   }
-
+  
   .c img {
     padding-left: none;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: none;
   }
-
+  
   .a iframe {
     width: 80%;
+  }
+  #adrs {
+    margin: 0px;
+    margin-bottom:15px ;
   }
 }
 
@@ -300,7 +301,7 @@ nav #icon {
   position: relative;
   top: 55px;
   left: 50px;
-
+  
   z-index: 1;
 
   -webkit-user-select: none;
