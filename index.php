@@ -191,6 +191,7 @@
       margin: auto; display: block;font-size: 40px; color: #df9f2f;" class="position"> ALL EVENTS </button></a>
     <br><br><br>
   </div>
+
   <div class="Sponsors"
     style="background-image: url('images/event_bg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
     <h1 class="position heading2"> SPONSORS
@@ -200,31 +201,31 @@
         <div class="slide-track">
           <!-- Img Code -->
           <div class="slide">
-            <img src="images\sponsors\adda52.png">
+            <img src="images/sponsors/adda52.png">
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images\sponsors\oliveGold.jpg" />
+            <img src="images/sponsors/olive&Gold.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images\sponsors\BeReal.png" />
+            <img src="images/sponsors/beReal.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images\sponsors\adda52.png" />
+            <img src="images/sponsors/adda52.png" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images\sponsors\oliveGold.jpg" />
+          <img src="images/sponsors/olive&Gold.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images\sponsors\adda52.png" />
+            <img src="images/sponsors/adda52.png" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images\sponsors\BeReal.png" />
+            <img src="image/sponsors/BeReal.png" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
         </div>
