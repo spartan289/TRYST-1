@@ -24,16 +24,15 @@
         if (mysqli_num_rows($result) > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                $arr = array($row['ad52ss'],$row['cname'],$row['c_mailId'],$row['cmobile']);
+                $arr = array($row['cname'],$row['c_mailId'],$row['cmobile']);
                 $res[] = $arr;
             }
             echo "<table>";
-            echo "<tr><th>photo</th><th>Name</th><th>Email</th><th>Mobile</th></tr>";
+            echo "<tr><th>Name</th><th>Email</th><th>Mobile</th></tr>";
             
             $mail_link = 'https://localhost/TRYST-1/api/sendmail.php';
             foreach ($res as $row) {
                 echo "<tr>";
-                echo "<td><img src='" . $row[0] . "' height='200px' width='200px' /></td>";
                 echo "<td>" . $row[1] . "</td>";
                 echo "<td>" . $row[2] . "</td>";
                 echo "<td>" . $row[3] . "</td>";
