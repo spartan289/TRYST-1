@@ -136,8 +136,9 @@
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
               src="images\event\mostrar.png">
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">PRO NITE 1 </h1>
-              <p class="leading-relaxed "> Get set to unleash your inner talent and fle your expertise in tyrst'23.</p>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MOSTRAR</h1>
+              <p class="leading-relaxed ">  From black and white classics to modern cutting-edge works, the exhibition promises to be
+                    a visual feast for the eyes.</p>
             </div>
           </div>
         </div>
@@ -169,8 +170,9 @@
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
               src="images\event\advaiitaa .png">
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">PRO NITE 2</h1>
-              <p class="leading-relaxed"> Get set to unleash your inner talent and fle your expertise in tyrst'23.</p>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">ADVAITAA</h1>
+              <p class="leading-relaxed"> celebrates the art of dance in various western styles such as hip hop,
+                    jazz, or contemporary.Get set to unleash your inner talent in tyrst'23.</p>
             </div>
           </div>
         </div>     
@@ -201,33 +203,30 @@
         <div class="slide-track">
           <!-- Img Code -->
           <div class="slide">
-            <img src="images/sponsors/adda52.png">
+            <img src="images/sponsors/delhiuniversityofficial.jpg">
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/sponsors/olive&Gold.jpg" />
+            <img src="images/sponsors/du_dtu_nsut_igdtuw_festas_2023.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/sponsors/beReal.jpg" />
+            <img src="images/sponsors/du_india.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/sponsors/adda52.png" />
+            <img src="images/sponsors/du_online_campus.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-          <img src="images/sponsors/olive&Gold.jpg" />
+          <img src="images/sponsors/Duadda.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <div class="slide">
-            <img src="images/sponsors/adda52.png" />
+            <img src="images/sponsors/duconnection.jpg" />
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-          <div class="slide">
-            <img src="image/sponsors/BeReal.png" />
-          </div>
-          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+
         </div>
       </div>
     </div>
@@ -253,17 +252,12 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="c">
-      <span>Follow US!</span>
-      <ul class="ftlist">
-        <a href="https://www.instagram.com/tryst.kmv/" target="_blank"><img
-            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
-            alt=""></a>
-      </ul>
+      
       For any queries contact us at :
       <div>
         <div class="email">
           <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
-          <span>tryst.2k23@gmail.com</span>
+          <a href="tryst.2k23@gmail.com"><span>tryst.2k23@gmail.com</span> </a>
         </div>
       </div>
     </div>
