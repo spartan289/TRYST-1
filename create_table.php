@@ -23,10 +23,10 @@ try {
 //   COMMIT;
 
     // show  data
-    // $query = "SELECT * FROM `tryst_info`";
-    // $result = mysqli_query($conn, $query) ;
-    // $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    // echo json_encode($data);
+    $query = "SELECT * FROM `tryst_info`";
+    $result = mysqli_query($conn, $query) ;
+    $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    echo json_encode($data);
 
 
 
