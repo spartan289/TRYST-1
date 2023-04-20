@@ -12,7 +12,7 @@
 
 #regform {
     margin: auto;
-    display: none;
+    display: block;
     width: 50%;
 }
 
