@@ -13,7 +13,7 @@
 </head>
 
 <body
-  style="background-image: url('images/!logo.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
+  style="background-image: url('https://tryststorage.blob.core.windows.net/blobtr/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
   <nav class="position" role="navigation">
     <!-- new -->
     <div id="menuToggle">
@@ -97,14 +97,7 @@
   </div> -->
 
 
-<?php
-session_start();
- if(isset($_SESSION['message'])){
-  //alert message
-  echo "<script>alert('".$_SESSION['message']."');</script>";
 
-  unset($_SESSION['message']);
-} ?>
 
 
 
@@ -113,7 +106,7 @@ session_start();
     <div class="container">
       <div class="title">Registration</div>
       <div class="content">
-        <h3> A Verification Mail will be sent to email id</h3>
+        <h3> A Mail with Tickets will be sent to email id</h3>
         <form action="insert_data.php" method="post" enctype="multipart/form-data">
           <div class="user-details">
             <div class="input-box">
@@ -182,7 +175,14 @@ session_start();
       </div>
     </div>
   </footer>
+  <?php
+session_start();
+ if(isset($_SESSION['message'])){
+  //alert message
+  echo "<script>alert('".$_SESSION['message']."');</script>";
 
+  unset($_SESSION['message']);
+} ?>
   <script src="js/main2.js"></script>
 </body>
 

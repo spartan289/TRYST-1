@@ -31,7 +31,7 @@
   }
   ?>
   <div class="head"
-    style="background-image: url('images/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
+    style="background-image: url('https://tryststorage.blob.core.windows.net/blobtr/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
     <nav class="position" role="navigation">
       <!-- new -->
       <div id="menuToggle">

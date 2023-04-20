@@ -44,9 +44,8 @@ if (isset($_POST['submit'])) {
             sendMail($uname, $email, $mobile);
 
             mysqli_query($con, $query);
-            $_SESSION['message'] = "Verification Mail has been sent verify to get Ticket Faster";
+            $_SESSION['message'] = "Tickets has been sent to your mail ID";
             mysqli_close($con);
-
             header('location: /');
             exit();
 
