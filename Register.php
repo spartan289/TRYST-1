@@ -64,7 +64,7 @@
 
   </nav>
 
-  <div id="process" class="process">
+  <!-- <div id="process" class="process">
     <div>
       <div class="CTR">
         <span id="HD">Registration</span>
@@ -94,7 +94,7 @@
         <button class="bt" onclick="viewform()"> Continue</button>
       </span>
     </div>
-  </div>
+  </div> -->
 
 
 <?php
@@ -136,10 +136,14 @@ session_start();
               <span class="details">Email Id</span>
               <input type="email" placeholder="Enter your name" name="email" required>
             </div>
-            <div class="inpimg">
+            <div class="input-box">
+              <span class="details">Date of Birth</span>
+              <input type="date" name="dob" required>
+            </div>
+            <!-- <div class="inpimg">
               <span class="details">Adda52 profile ScreenShot</span>
               <input type="file" name="fileToUpload" id="fileToUpload">
-            </div>
+            </div> -->
           </div>
           <div class="button">
             <input type="submit" name="submit" value="Register">
