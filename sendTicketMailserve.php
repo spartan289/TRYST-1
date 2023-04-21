@@ -28,16 +28,20 @@
                 $res[] = $arr;
             }
             echo "<table>";
-            echo "<tr><th>photo</th><th>Name</th><th>Email</th><th>Mobile</th></tr>";
+            echo "<tr><th>photo</th><th>Name</th><th>Email</th><th>Mobile</th><th>College Name</th><th> DOB</th></tr>";
             
-            $mail_link = 'https://tryst.azurewebsites.net/api/sendmail.php';
             foreach ($res as $row) {
+                $mail_link = 'https://tryst.azurewebsites.net/api/sendmail.php';
+                
+    
                 echo "<tr>";
                 echo "<td><img src='" . $row[0] . "' height='200px' width='200px' /></td>";
                 echo "<td>" . $row[1] . "</td>";
                 echo "<td>" . $row[2] . "</td>";
                 echo "<td>" . $row[3] . "</td>";
-                echo "<td>". "<a href=".$mail_link."?data=" . encryptData($row[1],$row[2],$row[3]) ."&cname=".$row[4]."&dob=".$row[6]." target='_blank' '>Send Mail</a>" . "</td>";
+                echo "<td>". "<a href=".$mail_link."?data=" . encryptData($row[1],$row[2],$row[3]) ."&cname=".urlencode($row[4])."&dob=".urlencode($row[6])." target='_blank' '>Send Mail</a>" . "</td>";
+                echo "<td>" . $row[4] . "</td>";
+                echo "<td>" . $row[6] . "</td>";
                 echo "</tr>";
             }
             echo "</table>";

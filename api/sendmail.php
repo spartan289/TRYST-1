@@ -11,8 +11,8 @@
     $name = $data[0];
     $email = $data[1];
     $mobile = $data[2];
-    $cname = $_GET['cname'];
-    $dob = $_GET['dob'];
+    $cname = urldecode($_GET['cname']);
+    $dob = urldecode($_GET['dob']);
     // connect to database
     $env = parse_ini_file('../.env');
     $conn = mysqli_init();

@@ -41,7 +41,7 @@
         $mail->isHTML(true);
         $mail->Subject = "Entrance Pass for Tryst'23";
         $qr = getQRCode($name, $email, $mobile);
-
+        
         $mail->Body = "
         Dear ".$name." ,<br>
 
