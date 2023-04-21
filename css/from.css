@@ -209,4 +209,8 @@ form .button input:hover {
     .step {
         width: 80%;
     }
+    .note{
+        font-size: medium;
+        padding-left: 10px;
+    }
 }
