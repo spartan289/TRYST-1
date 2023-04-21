@@ -1,3 +1,6 @@
+<?php session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -176,7 +179,6 @@
     </div>
   </footer>
   <?php
-session_start();
  if(isset($_SESSION['message'])){
   //alert message
   echo "<script>alert('".$_SESSION['message']."');</script>";

@@ -6,11 +6,12 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 
 require 'utils.php';
+session_start();
 
 
 
 if (isset($_POST['submit'])) {
-    session_start();
+
 
     $env = parse_ini_file('.env');
     $con = mysqli_init();
