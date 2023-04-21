@@ -47,9 +47,9 @@
           <a href="Main_Events.html">
             <li>Events</li>
           </a>
-          <a href="Sponsor.html">
+          <!-- <a href="Sponsor.html">
             <li>Sponsors</li>
-          </a>
+          </a> -->
           <a href="Register.php">
             <li>Register</li>
           </a>
@@ -66,7 +66,7 @@
       <ul class="options">
         <li><a class="active" href="index.php">Home </a> </li>
         <li><a href="Main_Events.html">Events</a> </li>
-        <li><a href="Sponsor.html">Sponsors</a> </li>
+        <!-- <li><a href="Sponsor.html">Sponsors</a> </li> -->
         <li><a href="Register.php">Register</a> </li>
         <li><a href="team.html">Contact Us</a> </li>
         <li><a href="Aboutus.html">About Us </a> </li>
@@ -184,14 +184,13 @@
     <br><br><br>
   </div>
 
-  <div class="Sponsors"
-    style="background-image: url('images/event_bg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
+  <!-- <div class="Sponsors"
+    style="background-image: url('images/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
     <h1 class="position heading2"> SPONSORS
     </h1>
     <div class="wrapper">
       <div class="slider">
         <div class="slide-track">
-          <!-- Img Code -->
           <div class="slide">
             <img src="images/sponsors/adda52.png">
           </div>
@@ -222,10 +221,10 @@
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <a href="Sponsor.html"> <button style="padding: 5px; border: solid rgb(140, 133, 135); 
-    margin:auto;display: block;font-size: 40px; color: #df9f2f;" class="position"> ALL SPONSORS </button></a>
+    <!-- <a href="Sponsor.html"> <button style="padding: 5px; border: solid rgb(140, 133, 135); 
+    margin:auto;display: block;font-size: 40px; color: #df9f2f;" class="position"> ALL SPONSORS </button></a> -->
     <br>
     <br>
     <br>
