@@ -138,8 +138,8 @@
             <!-- <div class="inpimg"> -->
             <div class="input-box">
               <span class="details">Photo ID card</span>
-              <input id="file-input" type="file" required/>
-              <span class="details" id="file-result">max size 100kb</span>
+              <input id="file-input" type="file" name="fileToUpload" required/>
+              <span class="details" id="file-result">max size 400kb</span>
             </div>
             <!-- </div> -->
             <div class="note">
@@ -149,7 +149,7 @@
             </div>
           </div>
           <div class="button">
-            <input id="file-submit" type="submit" name="submit" value="Register" disabled>
+            <input id="file-submit" type="submit" name="submit" value="Register">
           </div>
         </form>
       </div>
@@ -174,7 +174,7 @@
       <div>
         <div class="email">
           <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
-          <span>tryst.2k23@gmail.com</span>
+          <a href="tryst.2k23@gmail.com"><span>tryst.2k23@gmail.com</span> </a>
         </div>
       </div>
     </div>

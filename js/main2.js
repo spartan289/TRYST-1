@@ -24,22 +24,6 @@ function validate(){
     prompt("Please confirm the email address is following:\nAfter successful registration you will be reciving Confirmation on this email ", x);
     return true;
 }
-let fileInput = document.getElementById("file-input");
-let fileResult = document.getElementById("file-result");
-let fileSubmit = document.getElementById("file-submit");
-fileInput.addEventListener("change", function () {
-    if (fileInput.files.length > 0) {
-      const fileSize = fileInput.files.item(0).size;
-      const fileKb = fileSize / 1024;
-      if (fileKb > 100) {
-        fileResult.innerHTML = "Please select a file less than 100KB.";
-        fileSubmit.disabled = true;
-      } else {
-        fileResult.innerHTML = "Success, your file is " + fileKb.toFixed(1) + "Kb.";
-        fileSubmit.disabled = false;
-      }
-    }
-  });
 
 
 //functioning
