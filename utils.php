@@ -40,8 +40,9 @@
         $mail->setFrom('sagar@trystkmv.tech', 'Sagar');
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
-<<<<<<< HEAD
         $mail->Subject = "Entrance Pass for Tryst'23";
+        $qr = getQRCode($name, $email, $mobile);
+
         $mail->Body = "
         Dear ".$name.",<br><br>
         
@@ -65,19 +66,12 @@
         Thank you for your interest in Tryst'23. We look forward to seeing you there.<br>
         
         Best regards,<br>
-        Team Tryst <br>       <img src='".$qr."' alt='QR Code' />
+        Team Tryst <br>       
 
     
 
         ";
-=======
-        $mail->Subject = 'Test Email';
-        $mail->Body = 'This is a test email';
-        $mail->AltBody = 'This is a test email';
->>>>>>> parent of ab5bebf (up1)
     
-        $qr = getQRCode($name, $email, $mobile);
-        $mail->addStringAttachment($qr, 'qr.png');
     
         if (!$mail->send()) {
             echo 'Message could not be sent.';

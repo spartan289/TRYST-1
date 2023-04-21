@@ -27,6 +27,8 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $college = $_POST['college'];
+    $rollno = $_POST['rollno'];
+    $dob = $_POST['dob'];
     // check if 
     $target_dir = "uploads/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -55,11 +57,8 @@ if (isset($_POST['submit'])) {
             
             $surl = getImageURL($file);
 
-<<<<<<< HEAD
             $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss) VALUES ('$uname', '$email', '$mobile', '$college','$surl')";
-=======
-            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege) VALUES ('$uname', '$email', '$mobile', '$college')";
->>>>>>> parent of ab5bebf (up1)
+
             sendVerificationMail($uname, $email, $mobile);
 
             mysqli_query($con, $query);
@@ -79,7 +78,7 @@ function getImageURL($file)
         $uploadOk = 1;
         $fileName = $file["name"];
         compressImage($file['tmp_name'], $file['tmp_name']);
-        $connectionstring = 'DefaultEndpointsProtocol=https;AccountName=trystfiles;AccountKey=MxKyREoHTpL0VuARPUtZs5bB/ncjy7jJT7abC26DlbbYGS8tEBJpwA2/UIGu+np9sXHakgml/78C+AStTClZaA==;EndpointSuffix=core.windows.net';
+        $connectionstring = 'DefaultEndpointsProtocol=https;AccountName=tryststorage;AccountKey=WDRomwEvqkcfQ0IAnIk7rsAHwgcBfxC/L1UpTgEvHtSSXurGGBHjaxcr+ySjjjrUnjh/aWtDomL/+ASt85ZfvQ==;EndpointSuffix=core.windows.net';
         // send file to azure storage via curl
         $blobClient = BlobRestProxy::createBlobService($connectionstring);
 

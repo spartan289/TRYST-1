@@ -139,7 +139,7 @@
             <!-- <div class="inpimg"> -->
             <div class="input-box">
               <span class="details">Photo ID card</span>
-              <input id="file-input" type="file" required/>
+              <input id="file-input" type="file" name="fileToUpload" required/>
               <span class="details" id="file-result">max size 100kb</span>
             </div>
             <!-- </div> -->
