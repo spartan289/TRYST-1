@@ -27,7 +27,6 @@
       <span></span>
       <span></span>
       <span></span>
-
       <!--
             Too bad the menu has to be inside of the button
             but hey, it's pure CSS magic.
@@ -175,7 +174,7 @@
       <div>
         <div class="email">
           <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
-          <a href="tryst.2k23@gmail.com"><span>tryst.2k23@gmail.com</span> </a>
+          <a href="mailto: tryst.2k23@gmail.com" target="_blank"><span>tryst.2k23@gmail.com</span> </a>
         </div>
       </div>
     </div>
