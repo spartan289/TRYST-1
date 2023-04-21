@@ -30,7 +30,7 @@
     {
         // start seesion
         session_start();
-                // set session message
+        // set session message
         $_SESSION['message'] = $status_message;
 
         header('location: ../index.php') ;

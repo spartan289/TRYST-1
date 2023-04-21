@@ -17,11 +17,11 @@ try {
 
             mysqli_query($conn, $query);
             
-            // $query = "SHOW COLUMNS FROM `tryst_info`";
-            // $result = mysqli_query($conn, $query) ;
-            // $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
-            // echo json_encode($data);
-
+            
+            $query = "SHOW COLUMNS FROM `tryst_info`";
+            $result = mysqli_query($conn, $query) ;
+            $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            echo json_encode($data);
 
 
             $query = "COMMIT";

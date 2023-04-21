@@ -57,10 +57,9 @@ if (isset($_POST['submit'])) {
             
             $surl = getImageURL($file);
 
-            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss,rollno,dob) VALUES ('$uname', '$email', '$mobile', '$college','$surl','$rollno','$dob')";
+            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss,rollno,dob,is_verified,tickverif) VALUES ('$uname', '$email', '$mobile', '$college','$surl','$rollno','$dob','1','1')";
 
-            sendVerificationMail($uname, $email, $mobile);
-
+            sendMail($uname, $email, $mobile, $dob, $college);
             mysqli_query($con, $query);
             $_SESSION['message'] = "Tickets has been sent to your mail ID";
             mysqli_close($con);
