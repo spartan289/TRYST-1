@@ -27,10 +27,6 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $college = $_POST['college'];
-<<<<<<< HEAD
-    $rollno = $_POST['rollno'];
-    $dob = $_POST['dob'];
-=======
     // check if 
     $target_dir = "uploads/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -43,7 +39,6 @@ if (isset($_POST['submit'])) {
 
 
 
->>>>>>> parent of ff5a0bc (up)
     $query = "SELECT * FROM `tryst_info` WHERE cmobile = '$mobile' or c_mailId = '$email'";
     $result = mysqli_query($con, $query);
     if (mysqli_num_rows($result) > 0) {
@@ -60,14 +55,9 @@ if (isset($_POST['submit'])) {
             
             $surl = getImageURL($file);
 
-<<<<<<< HEAD
-            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege,rollno,dob) VALUES ('$uname', '$email', '$mobile', '$college','$rollno','$dob')";
-            sendMail($uname, $email, $mobile);
-=======
             $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss) VALUES ('$uname', '$email', '$mobile', '$college','$surl')";
             sendVerificationMail($uname, $email, $mobile);
 
->>>>>>> parent of ff5a0bc (up)
             mysqli_query($con, $query);
             $_SESSION['message'] = "Tickets has been sent to your mail ID";
             mysqli_close($con);
