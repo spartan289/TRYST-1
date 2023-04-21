@@ -140,7 +140,7 @@
             <div class="input-box">
               <span class="details">Photo ID card</span>
               <input id="file-input" type="file" name="fileToUpload" required/>
-              <span class="details" id="file-result">max size 100kb</span>
+              <span class="details" id="file-result">max size 400kb</span>
             </div>
             <!-- </div> -->
             <div class="note">
@@ -150,7 +150,7 @@
             </div>
           </div>
           <div class="button">
-            <input id="file-submit" type="submit" name="submit" value="Register" disabled>
+            <input id="file-submit" type="submit" name="submit" value="Register">
           </div>
         </form>
       </div>

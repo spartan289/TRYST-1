@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
             
             $surl = getImageURL($file);
 
-            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss) VALUES ('$uname', '$email', '$mobile', '$college','$surl')";
+            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss,rollno,dob) VALUES ('$uname', '$email', '$mobile', '$college','$surl','$rollno','$dob')";
 
             sendVerificationMail($uname, $email, $mobile);
 
@@ -84,7 +84,7 @@ function getImageURL($file)
 
         // Upload the file to Azure Blob Storage
         $fileContent = fopen($file['tmp_name'], "r");
-        $containerName = "screenshots";
+        $containerName = "blobtr";
         $blobOptions = new CreateBlockBlobOptions();
         $blobOptions->setContentType($file['type']);
         //   $blobOptions->setContentLength($file['size']);
@@ -135,18 +135,18 @@ function sendVerificationMail($name, $email, $mobile)
 
     $Body = "Dear Recipient,<br><br>
 
-    Thank you for signing up for Tryst. We just need to verify your email address to complete the registration process. </br>
-    To do so, please click on the following link for verification : ".$verif_link.".</br>
+    Thank you for signing up for Tryst. We just need to verify your email address to complete the registration process. <br>
+    To do so, please click on the following link for verification : ".$verif_link.".<br>
     
-    We value your privacy and security and want to ensure that this email and verification </br>
-    link are not misidentified as spam. Please add our email address to your contacts list and</br>
-     mark this email as 'not spam' to ensure that you receive all future communications from us.</br>
+    We value your privacy and security and want to ensure that this email and verification <br>
+    link are not misidentified as spam. Please add our email address to your contacts list and<br>
+     mark this email as 'not spam' to ensure that you receive all future communications from us.<br>
     
-    If you have any questions or concerns, please do not hesitate to contact us.</br>
-     Thank you for choosing our service, and we look forward to serving you.</br></br>
+    If you have any questions or concerns, please do not hesitate to contact us.<br>
+     Thank you for choosing our service, and we look forward to serving you.<br><br>
     
-    Best regards,</br>
-    Tryst 2023</br>";
+    Best regards,<br>
+    Tryst 2023<br>";
     // code to send mail
     $mail = new PHPMailer;
     $mail->isSMTP();

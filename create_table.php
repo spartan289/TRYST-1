@@ -10,14 +10,13 @@ try {
             $conn = mysqli_init();
             if($env["MYSQL_ATTR_SSL_CA"] != NULL){
                 mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
-
             }
             mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
 
             // show  data
-            // mysqli_query($conn, $query);
+            mysqli_query($conn, $query);
             
-            $query = "SELECT * FROM `tryst_info`";
+            $query = "SHOW COLUMNS FROM `tryst_info`";
             $result = mysqli_query($conn, $query) ;
             $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
             echo json_encode($data);
