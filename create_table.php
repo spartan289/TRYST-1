@@ -1,47 +1,47 @@
 <?php
 try {
     //code...
-    $env = parse_ini_file('.env');
+    if (isset($_POST['submit'])) {
 
-    $conn = mysqli_init();
-    if($env["MYSQL_ATTR_SSL_CA"] != NULL){
-        mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
+        $query = $_POST['query'];
 
-    }
-    mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
+            $env = parse_ini_file('.env');
 
-    // $query = "TRUNCATE TABLE `tryst_info`";
-    // $query="
-    // ALTER TABLE `tryst_info`
-    // MODIFY `index` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-    // ";
-    // mysqli_query($conn, $query) ;
-//     ALTER TABLE `tryst_info`
-//     ADD PRIMARY KEY (`index`);
-//   ALTER TABLE `tryst_info`
-//     MODIFY `index` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-//   COMMIT;
+            $conn = mysqli_init();
+            if($env["MYSQL_ATTR_SSL_CA"] != NULL){
+                mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
 
-    // show  data
-    $query = "SELECT * FROM `tryst_info`";
-    $result = mysqli_query($conn, $query) ;
-    $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    echo json_encode($data);
+            }
+            mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
+
+            // show  data
+            mysqli_query($conn, $query);
+            
+            $query = "SELECT * FROM `tryst_info`";
+            $result = mysqli_query($conn, $query) ;
+            $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            echo json_encode($data);
 
 
 
 
 
-    $query = "COMMIT";
-    mysqli_query($conn, $query) ;
-    mysqli_close($conn);
+            $query = "COMMIT";
+            mysqli_query($conn, $query) ;
+            mysqli_close($conn);
 
-
-} catch (\Throwable $th) {
-    //throw $th
-    echo $th;
+        }
+    } catch (\Throwable $th) {
+        //throw $th
+        echo $th;
 }
+
+
     
 
 
 ?>
+    <form action="create_table.php" method="post">
+        <input type="textarea" name="query" placeholder="name">
+        <input type="submit" name="submit" value="submit">
+    </form>

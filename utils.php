@@ -40,23 +40,33 @@
         $mail->setFrom('sagar@trystkmv.tech', 'Sagar');
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
-        $mail->Subject = 'Tryst`23 Tickets';
+        $mail->Subject = "Entrance Pass for Tryst'23";
         $mail->Body = "
-        Dear Recipient,<br><br>
-
-        Thank you for signing up for Tryst. Here is your ticket. <br>
-        <img src='".$qr."' alt='QR Code' />
-
+        Dear ".$name.",<br><br>
         
-        We value your privacy and security and want to ensure that this email and verification <br>
-        link are not misidentified as spam. Please add our email address to your contacts list and<br>
-        mark this email as 'not spam' to ensure that you receive all future communications from us.<br>
+        Thank you for signing up for Tryst'23. As a confirmation of your registration, we are pleased to attach your<br>
+         entrance pass for the event in the form of a PNG file.<br><br>
         
-        If you have any questions or concerns, please do not hesitate to contact us.<br>
-        Thank you for choosing our service, and we look forward to serving you.<br><br>
+        Your entrance pass contains a unique QR code that will be used to grant you access to the event. We kindly <br>
+        request that you have this pass readily available<br>
+        for presentation at the entrance. However, please note that in addition to the
+         entrance pass, you will also need to present a valid form of identification to gain access to the event.
+
+         <br><br>
+         <img src='".$qr."' alt='QR Code' />
+            <br><br>
+        You may present a digital or physical identification card such as a passport, driver's license, or any government-issued ID.<br>
+         Please ensure that the name on your <br>
+        <br>identification card matches the name on your entrance pass to avoid any inconvenience.<br>
+        
+        We encourage you familiarize yourself with the schedule of activities, as we are confident that you will have a great time.<br>
+        
+        Thank you for your interest in Tryst'23. We look forward to seeing you there.<br>
         
         Best regards,<br>
-        Tryst 2023<br>
+        Team Tryst <br>       <img src='".$qr."' alt='QR Code' />
+
+    
 
         ";
     
