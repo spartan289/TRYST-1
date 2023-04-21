@@ -7,6 +7,7 @@ try {
 
             $env = parse_ini_file('.env');
 
+<<<<<<< HEAD
             $conn = mysqli_init();
             if($env["MYSQL_ATTR_SSL_CA"] != NULL){
                 mysqli_ssl_set($conn,NULL,NULL, $env["MYSQL_ATTR_SSL_CA"], NULL, NULL);
@@ -21,6 +22,17 @@ try {
             $result = mysqli_query($conn, $query) ;
             $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
             echo json_encode($data);
+=======
+    // // // //query truncate
+    // $query = "TRUNCATE TABLE `tryst_info`";
+    // mysqli_query($conn, $query) ;
+
+    // show  data
+    $query = "SELECT * FROM `tryst_info`";
+    $result = mysqli_query($conn, $query) ;
+    $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    echo json_encode($data);
+>>>>>>> parent of ab5bebf (up1)
 
 
 

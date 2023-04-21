@@ -11,9 +11,11 @@
         // encrypt data
         $data = encryptData($name,$email,$mobile);
         // send request to goqr.com
-       
+        $response = file_get_contents($url.$data);
+        // save qr code
+        file_put_contents('qr.png',$response);
         // return qr code
-        return $url.$data;
+        return $response;
 
     }
     function encryptData($name,$email,$mobile){
@@ -26,8 +28,6 @@
     function sendMail($name, $email, $mobile)
     {
         // code to send mail
-        $qr = getQRCode($name, $email, $mobile);
-
         $mail = new PHPMailer;
         $mail->isSMTP();
         $mail->Host = 'us2.smtp.mailhostbox.com';
@@ -40,6 +40,7 @@
         $mail->setFrom('sagar@trystkmv.tech', 'Sagar');
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
+<<<<<<< HEAD
         $mail->Subject = "Entrance Pass for Tryst'23";
         $mail->Body = "
         Dear ".$name.",<br><br>
@@ -69,7 +70,14 @@
     
 
         ";
+=======
+        $mail->Subject = 'Test Email';
+        $mail->Body = 'This is a test email';
+        $mail->AltBody = 'This is a test email';
+>>>>>>> parent of ab5bebf (up1)
     
+        $qr = getQRCode($name, $email, $mobile);
+        $mail->addStringAttachment($qr, 'qr.png');
     
         if (!$mail->send()) {
             echo 'Message could not be sent.';
