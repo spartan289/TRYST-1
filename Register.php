@@ -174,7 +174,7 @@
       <div>
         <div class="email">
           <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
-          <a href="tryst.2k23@gmail.com"><span>tryst.2k23@gmail.com</span> </a>
+          <a href="mailto: tryst.2k23@gmail.com" target="_blank"><span>tryst.2k23@gmail.com</span> </a>
         </div>
       </div>
     </div>
