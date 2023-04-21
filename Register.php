@@ -1,3 +1,6 @@
+<?php session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,8 +15,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body
-  style="background-image: url('images/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
+<body style="background-image: url('images/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
   <nav class="position" role="navigation">
     <!-- new -->
     <div id="menuToggle">
@@ -96,14 +98,7 @@
   </div> -->
 
 
-<?php
-session_start();
- if(isset($_SESSION['message'])){
-  //alert message
-  echo "<script>alert('".$_SESSION['message']."');</script>";
 
-  unset($_SESSION['message']);
-} ?>
 
 
 
@@ -114,6 +109,7 @@ session_start();
       <div class="content">
         <h3> A Verification Mail will be sent to email id</h3>
         <form action="insert_data.php" name="trystform" method="post" enctype="multipart/form-data" onsubmit="validate()">
+
           <div class="user-details">
             <div class="input-box">
               <span class="details">Full Name</span>
@@ -183,7 +179,13 @@ session_start();
       </div>
     </div>
   </footer>
+  <?php
+ if(isset($_SESSION['message'])){
+  //alert message
+  echo "<script>alert('".$_SESSION['message']."');</script>";
 
+  unset($_SESSION['message']);
+} ?>
   <script src="js/main2.js"></script>
 </body>
 
