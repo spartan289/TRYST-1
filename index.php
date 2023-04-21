@@ -1,3 +1,6 @@
+<?php session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,20 +21,9 @@
 
 <body class="main">
 
-  <?php
-    // check if a session message is present
-    session_start();
-    // unset($_SESSION['message']);
-
-    
-  if(isset($_SESSION['message'])){
-    // pop up the message
-    echo "<script>alert('".$_SESSION['message']."');</script>";
-    unset($_SESSION['message']);
-  }
-  ?>
+  
   <div class="head"
-    style="background-image: url('images/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
+    style="background-image: url('https://tryststorage.blob.core.windows.net/blobtr/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
     <nav class="position" role="navigation">
       <!-- new -->
       <div id="menuToggle">
@@ -268,6 +260,18 @@
     </div>
   </footer>
   </div>
+  <?php
+    // check if a session message is present
+    session_start();
+    // unset($_SESSION['message']);
+
+    
+  if(isset($_SESSION['message'])){
+    // pop up the message
+    echo "<script>alert('".$_SESSION['message']."');</script>";
+    unset($_SESSION['message']);
+  }
+  ?>
   <script src="js/main2.js"></script>
 </body>
 

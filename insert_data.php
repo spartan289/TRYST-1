@@ -4,16 +4,14 @@ require_once 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 
-use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlockBlobOptions;
 
 require 'utils.php';
+session_start();
 
 
 
 if (isset($_POST['submit'])) {
-    session_start();
+
 
     $env = parse_ini_file('.env');
     $con = mysqli_init();
@@ -26,18 +24,8 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $college = $_POST['college'];
-    // check if 
-    $target_dir = "uploads/";
-    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-    $newFileName = $uname . "." . $imageFileType;
-    $newFilePath = $target_dir . $newFileName;
-    $blobName = $newFileName;
-    $file = $_FILES['fileToUpload'];
-
-
-
+    $rollno = $_POST['rollno'];
+    $dob = $_POST['dob'];
     $query = "SELECT * FROM `tryst_info` WHERE cmobile = '$mobile' or c_mailId = '$email'";
     $result = mysqli_query($con, $query);
     if (mysqli_num_rows($result) > 0) {
@@ -52,117 +40,17 @@ if (isset($_POST['submit'])) {
     } else {
             //code...
             
-            $surl = getImageURL($file);
 
-            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss) VALUES ('$uname', '$email', '$mobile', '$college','$surl')";
-            sendVerificationMail($uname, $email, $mobile);
-
+            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege,rollno,dob) VALUES ('$uname', '$email', '$mobile', '$college','$rollno','$dob')";
+            sendMail($uname, $email, $mobile);
             mysqli_query($con, $query);
-            $_SESSION['message'] = "Verification Mail has been sent verify to get Ticket Faster";
+            $_SESSION['message'] = "Tickets has been sent to your mail ID";
             mysqli_close($con);
-
             header('location: /');
             exit();
 
     }
 
 }
-function getImageURL($file)
-{
 
-    $check = getimagesize($file["tmp_name"]);
-    if ($check !== false) {
-        $uploadOk = 1;
-        $fileName = $file["name"];
-        compressImage($file['tmp_name'], $file['tmp_name']);
-        $connectionstring = 'DefaultEndpointsProtocol=https;AccountName=trystfiles;AccountKey=MxKyREoHTpL0VuARPUtZs5bB/ncjy7jJT7abC26DlbbYGS8tEBJpwA2/UIGu+np9sXHakgml/78C+AStTClZaA==;EndpointSuffix=core.windows.net';
-        // send file to azure storage via curl
-        $blobClient = BlobRestProxy::createBlobService($connectionstring);
 
-        // Upload the file to Azure Blob Storage
-        $fileContent = fopen($file['tmp_name'], "r");
-        $containerName = "screenshots";
-        $blobOptions = new CreateBlockBlobOptions();
-        $blobOptions->setContentType($file['type']);
-        //   $blobOptions->setContentLength($file['size']);
-        $blobClient->createBlockBlob($containerName, $fileName, $fileContent, $blobOptions);
-
-        // get file url
-        $blobClient->getBlob($containerName, $fileName);
-        $blobUrl = $blobClient->getBlobUrl($containerName, $fileName);
-        return $blobUrl;
-    } else {
-        // echo "File is not an image.";
-        $uploadOk = 0;
-        return null;
-    }
-}
-function compressImage($source, $destination)
-{
-    // Get image info 
-    $imgInfo = getimagesize($source);
-    $mime = $imgInfo['mime'];
-
-    // Create a new image from file 
-    switch ($mime) {
-        case 'image/jpeg':
-            $image = imagecreatefromjpeg($source);
-            break;
-        case 'image/png':
-            $image = imagecreatefrompng($source);
-            break;
-        case 'image/gif':
-            $image = imagecreatefromgif($source);
-            break;
-        default:
-            $image = imagecreatefromjpeg($source);
-    }
-
-    // Save image 
-    imagejpeg($image, $destination);
-
-    // Return compressed image 
-    return $destination;
-}
-
-function sendVerificationMail($name, $email, $mobile)
-{
-    require 'vendor/autoload.php';
-    $verif_link = 'https://tryst.azurewebsites.net/api/verify.php?data=' . encryptData($name, $email, $mobile);
-
-    $Body = "Dear Recipient,<br><br>
-
-    Thank you for signing up for Tryst. We just need to verify your email address to complete the registration process. </br>
-    To do so, please click on the following link for verification : ".$verif_link.".</br>
-    
-    We value your privacy and security and want to ensure that this email and verification </br>
-    link are not misidentified as spam. Please add our email address to your contacts list and</br>
-     mark this email as 'not spam' to ensure that you receive all future communications from us.</br>
-    
-    If you have any questions or concerns, please do not hesitate to contact us.</br>
-     Thank you for choosing our service, and we look forward to serving you.</br></br>
-    
-    Best regards,</br>
-    Tryst 2023</br>";
-    // code to send mail
-    $mail = new PHPMailer;
-    $mail->isSMTP();
-    $mail->Host = 'us2.smtp.mailhostbox.com	';
-    $mail->SMTPAuth = true;
-    // $mail->SMTPDebug = 2;
-    $mail->Username = 'sagar@trystkmv.tech';
-    $mail->Password = 'tzceevf9';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
-    $mail->setFrom('sagar@trystkmv.tech', 'Sagar');
-    $mail->addAddress($email, $name);
-
-    $mail->isHTML(true);
-    $mail->Subject = 'Tryst`23 Verification Email';
-    $mail->Body = $Body;
-
-    if (!$mail->send()) {
-    } else {
-        //display error message
-    }
-}
