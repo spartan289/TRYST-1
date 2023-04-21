@@ -343,7 +343,7 @@ ul li a {
 }
 
 .carddiv h2,
-h3 {
+.carddiv h3 {
   display: flex;
   justify-content: center;
   align-items: center;

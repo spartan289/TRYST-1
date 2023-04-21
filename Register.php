@@ -25,7 +25,6 @@
       <span></span>
       <span></span>
       <span></span>
-
       <!--
             Too bad the menu has to be inside of the button
             but hey, it's pure CSS magic.
@@ -175,12 +174,6 @@ session_start();
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="c">
-      <span>Follow US!</span>
-      <ul class="ftlist">
-        <a href="https://www.instagram.com/tryst.kmv/" target="_blank"><img
-            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
-            alt=""></a>
-      </ul>
       For any queries contact us at :
       <div>
         <div class="email">
