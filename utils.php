@@ -35,12 +35,12 @@
             // $mail->Host = 'smtp.eu.mailgun.org';
             $mail->SMTPAuth = true;
             // $mail->SMTPDebug = 2;
-            $mail->Host = 'us2.smtp.mailhostbox.com	';
-            $mail->Username = getenv('C_EMAIL');
-            $mail->Password = getenv('C_PASS');
+            $mail->Host = 'smtp.eu.mailgun.org';
+            $mail->Username = getenv('MAILGUN_USERNAME');
+            $mail->Password = getenv('MAILGUN_PASSWORD');
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
-            $mail->setFrom(getenv('C_EMAIL'), 'Admininstration Tryst');
+            $mail->setFrom(getenv('MAILGUN_USERNAME'), 'Admininstration Tryst');
     
         }
         else{
