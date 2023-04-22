@@ -44,13 +44,13 @@
     
         }
         else{
-            $mail->Username = 'sagarpc2020@outlook.com';
-            $mail->Password = 'Sagar@9398';
-            $mail->Host = 'smtp-mail.outlook.com';
+            $mail->Username = 'tryst.tech@gmail.com';
+            $mail->Password = 'TrystTech@1';
+            $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
-            $mail->setFrom('sagarpc2020@outlook.com', 'Admininstration Tryst');
+            $mail->setFrom('tryst.tech@gmail.com', 'Admininstration Tryst');
         }
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
