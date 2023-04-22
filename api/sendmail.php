@@ -23,7 +23,9 @@
     mysqli_real_connect($conn, $env["AZURE_MYSQL_HOST"], $env["AZURE_MYSQL_USERNAME"], $env["AZURE_MYSQL_PASSWORD"], $env["AZURE_MYSQL_DBNAME"], 3306, MYSQLI_CLIENT_SSL);
 
     $query = "UPDATE `tryst_info` SET tickverif=True WHERE c_mailId = '$email'" ;
+    echo $query;
     sendMail($name,$email,$mobile,$dob,$cname);
+
     mysqli_query($conn, $query) ;
     mysqli_close($conn);
     function response($status,$status_message,$data)

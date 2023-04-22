@@ -60,10 +60,10 @@ if (isset($_POST['submit'])) {
             $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss,rollno,dob,is_verified,tickverif) VALUES ('$uname', '$email', '$mobile', '$college','$surl','$rollno','$dob','1','1')";
 
             sendMail($uname, $email, $mobile, $dob, $college);
-            mysqli_query($con, $query);
-            $_SESSION['message'] = "Tickets has been sent to your mail ID";
-            mysqli_close($con);
-            header('location: /');
+            // mysqli_query($con, $query);
+            // $_SESSION['message'] = "Tickets has been sent to your mail ID";
+            // mysqli_close($con);
+            // header('location: /');
             exit();
 
     }

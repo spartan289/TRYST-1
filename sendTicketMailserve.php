@@ -31,8 +31,8 @@
             echo "<tr><th>photo</th><th>Name</th><th>Email</th><th>Mobile</th><th>College Name</th><th> DOB</th></tr>";
             
             foreach ($res as $row) {
-                $mail_link = 'https://tryst.azurewebsites.net/api/sendmail.php';
-                
+                // $mail_link = 'https://tryst.azurewebsites.net/api/sendmail.php';
+                $mail_link = 'http://localhost/TRYST-1/api/sendmail.php';
     
                 echo "<tr>";
                 echo "<td><img src='" . $row[0] . "' height='200px' width='200px' /></td>";

@@ -2,6 +2,8 @@
     // create a functions to send mail
     require 'vendor/autoload.php';
     use PHPMailer\PHPMailer\PHPMailer;
+    use Mailgun\Mailgun;
+
 
     function getQRCode($name,$email,$mobile){
         // code to generate QR code
@@ -29,14 +31,14 @@
         // code to send mail
         $mail = new PHPMailer;
         $mail->isSMTP();
-        $mail->Host = 'us2.smtp.mailhostbox.com';
+        $mail->Host = 'smtp.eu.mailgun.org';
         $mail->SMTPAuth = true;
         // $mail->SMTPDebug = 2;
-        $mail->Username = 'sagar@trystkmv.tech';
-        $mail->Password = 'tzceevf9';
+        $mail->Username = 'postmaster@trystkmv.tech';
+        $mail->Password = '38dc265ccd1af04ac0c3450158d835da-181449aa-e901272c';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->setFrom('sagar@trystkmv.tech', 'Sagar');
+        $mail->setFrom('postmaster@trystkmv.tech', 'PostMaster');
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
         $mail->Subject = "Entrance Pass for Tryst'23";
@@ -71,13 +73,13 @@
         -----QR CODE ----<br>
         <img src='".$qr."' alt='QR Code'>
         ";
-    
+        echo "Hello World";
     
         if (!$mail->send()) {
-            // echo 'Message could not be sent.';
-            // echo 'Mailer Error: ' . $mail->ErrorInfo;
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
         } else {
-            // echo 'Message has been sent';
+            echo 'Message has been sent';
         }
     }
     
