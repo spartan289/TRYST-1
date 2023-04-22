@@ -114,35 +114,35 @@
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
               src="images/event/anhad.jpeg">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+            <!-- <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
               id="position">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">BATTLE OF BANDS </h1>
               <p class="leading-relaxed">It's an opportunity for musicians to experiment with their
                     instruments and create new sounds and push the boundaries of traditional
                     music and explore new genres. </p>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="lg:w-1/3 sm:w-1/2 p-14">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
-              src="images\event\mostrar.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              src="images\event\pixel.jpeg">
+            <!-- <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MOSTRAR</h1>
               <p class="leading-relaxed ">  From black and white classics to modern cutting-edge works, the exhibition promises to be
                     a visual feast for the eyes.</p>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="lg:w-1/3 sm:w-1/2 p-14">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full object-cover object-center "
               src="images/event/envinceF.jpeg">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <!-- <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">EVINCE: FASHION SHOW</h1>
               <p class="leading-relaxed ">A platform for participants to tell a story through fashion,
                      creatively crafted by their teams, and manifested through confidence, design. </p>
-            </div>
+            </div> -->
           </div>
         </div>
     
@@ -150,33 +150,33 @@
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
               src="images\event\Nrityang.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <!-- <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3"> UTHAAN</h1>
               <p class="leading-relaxed"> dance competition ,a stage to the dancers to showcase their skills and 
                 provides a unique opportunity to witness the beauty and athleticism of western dance.</p>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="lg:w-1/3 sm:w-1/3 p-14">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
-              src="images\event\advaiitaa .png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              src="images\event\advaiitaa.png">
+            <!-- <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">ADVAaaTAA</h1>
               <p class="leading-relaxed"> celebrates the art of dance in various western styles such as hip hop,
                     jazz, or contemporary.Get set to unleash your inner talent in tyrst'23.</p>
-            </div>
+            </div> -->
           </div>
         </div>     
         <div class="lg:w-1/3 sm:w-1/2 p-14">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
-              src="images\event\vagmita.jpg">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              src="images\event\kaaghaz.JPG">
+            <!-- <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">IRSHAAD</h1>
               <p class="leading-relaxed">a platform for poets to showcase their talent and express themselves in front
                  of an enthusiastic audience and celebrate the beauty of the languages.</p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
