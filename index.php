@@ -105,7 +105,6 @@
     </div>
 
     <div class="Events">
-        <!-- <div class="Events" style="background-image: url('images/event_bg.svg'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;" > -->
         <div class="container px-5 py-24 mx-auto">
             <h1 class="position heading2">EVENTS
             </h1>
@@ -114,7 +113,7 @@
                     <div class="flex relative">
                         <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
                             src="images/event/anhad.jpeg">
-                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64" 
                             id="position">
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">BATTLE OF BANDS</h1>
                             <p class="leading-relaxed">It's an opportunity for musicians to experiment with their
@@ -128,7 +127,7 @@
                         <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
                             src="images\event\pixel.jpeg">
                         <div
-                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64">
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">PIXEL</h1>
                             <p class="leading-relaxed ">An online photography competition, we will be accepting
                                 online entries for our upcoming competition based on the listed themes.</p>
@@ -140,7 +139,7 @@
                         <img alt="gallery" class="absolute inset-0 w-full object-cover object-center "
                             src="images/event/envinceF.jpeg">
                         <div
-                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64">
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">EVINCE: FASHION SHOW</h1>
                             <p class="leading-relaxed ">A platform for participants to tell a story through fashion,
                                 creatively crafted by their teams, and manifested through confidence, design. </p>
@@ -153,7 +152,7 @@
                         <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
                             src="images\event\Nrityang.png">
                         <div
-                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64">
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">NRITYANG</h1>
                             <p class="leading-relaxed"> dance competition ,a stage to the dancers to showcase their
                                 skills and
@@ -167,7 +166,7 @@
                         <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
                             src="images\event\advaiitaa.png">
                         <div
-                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64">
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">ADVAITAA</h1>
                             <p class="leading-relaxed"> celebrates the art of dance in various western styles such as
                                 hip hop,
@@ -180,7 +179,7 @@
                         <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
                             src="images\event\kaaghaz.JPG">
                         <div
-                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64">
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">KAAGHAZ</h1>
                             <p class="leading-relaxed">a platform for poets to showcase their talent and express
                                 themselves in front
