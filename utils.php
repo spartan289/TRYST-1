@@ -31,14 +31,27 @@
         // code to send mail
         $mail = new PHPMailer;
         $mail->isSMTP();
-        $mail->Host = 'smtp.eu.mailgun.org';
-        $mail->SMTPAuth = true;
-        $mail->SMTPDebug = 2;
-        $mail->Username = 'administration@trystkmv.tech	';
-        $mail->Password = 'Sagar@9398';
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
-        $mail->setFrom('administration@trystkmv.tech', 'Admininstration Tryst');
+        if(getenv('ENVIRONMENT') == 'production'){
+            $mail->Host = 'smtp.eu.mailgun.org';
+            $mail->SMTPAuth = true;
+            $mail->SMTPDebug = 2;
+    
+            $mail->Username = getenv('MAILGUN_USERNAME');
+            $mail->Password = getenv('MAILGUN_PASSWORD');
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+            $mail->setFrom(getenv('MAILGUN_USERNAME'), 'Admininstration Tryst');
+    
+        }
+        else{
+            $mail->Username = 'sagarpc2020@outlook.com';
+            $mail->Password = 'Sagar@9398';
+            $mail->Host = 'smtp-mail.outlook.com';
+            $mail->SMTPAuth = true;
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+            $mail->setFrom('sagarpc2020@outlook.com', 'Admininstration Tryst');
+        }
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
         $mail->Subject = "Entrance Pass for Tryst'23";
