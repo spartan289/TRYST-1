@@ -126,7 +126,7 @@
         <div class="lg:w-1/3 sm:w-1/2 p-14">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
-              src="images\event\mostrar.png">
+              src="images\event\pixel.jpeg">
             <!-- <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MOSTRAR</h1>
               <p class="leading-relaxed ">  From black and white classics to modern cutting-edge works, the exhibition promises to be
@@ -160,7 +160,7 @@
         <div class="lg:w-1/3 sm:w-1/3 p-14">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
-              src="images\event\advaiitaa .png">
+              src="images\event\advaiitaa.png">
             <!-- <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">ADVAaaTAA</h1>
               <p class="leading-relaxed"> celebrates the art of dance in various western styles such as hip hop,
@@ -171,7 +171,7 @@
         <div class="lg:w-1/3 sm:w-1/2 p-14">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
-              src="images\event\vagmita.jpg">
+              src="images\event\kaaghaz.JPG">
             <!-- <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">IRSHAAD</h1>
               <p class="leading-relaxed">a platform for poets to showcase their talent and express themselves in front
