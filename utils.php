@@ -34,7 +34,7 @@
         if(getenv('ENVIRONMENT') == 'production'){
             $mail->Host = 'smtp.eu.mailgun.org';
             $mail->SMTPAuth = true;
-            $mail->SMTPDebug = 2;
+            // $mail->SMTPDebug = 2;
     
             $mail->Username = getenv('MAILGUN_USERNAME');
             $mail->Password = getenv('MAILGUN_PASSWORD');
