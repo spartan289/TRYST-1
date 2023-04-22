@@ -33,12 +33,12 @@
         $mail->isSMTP();
         $mail->Host = 'smtp.eu.mailgun.org';
         $mail->SMTPAuth = true;
-        // $mail->SMTPDebug = 2;
-        $mail->Username = 'postmaster@trystkmv.tech';
-        $mail->Password = '38dc265ccd1af04ac0c3450158d835da-181449aa-e901272c';
+        $mail->SMTPDebug = 2;
+        $mail->Username = 'administration@trystkmv.tech	';
+        $mail->Password = 'Sagar@9398';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->setFrom('postmaster@trystkmv.tech', 'PostMaster');
+        $mail->setFrom('administration@trystkmv.tech', 'Admininstration Tryst');
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
         $mail->Subject = "Entrance Pass for Tryst'23";
