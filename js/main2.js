@@ -13,10 +13,19 @@ function toggleshow() {
         z.src = "images/hamburger.png";
     }
 }
-function viewform() {
+
+//form
+function viewform() {//not in use..
     document.getElementById("regform").style.display = "block";
     document.getElementById("process").style.display = "none";
 }
+function validate(){
+    let x = document.forms["trystform"]["email"].value;
+    prompt("Please confirm the email address is following:\nAfter successful registration you will be reciving Confirmation on this email ", x);
+    return true;
+}
+
+
 //functioning
 window.addEventListener("popstate", handelBack);
 function ShowSE(ID) {

@@ -14,7 +14,7 @@
         
     
 
-        $query = "SELECT * from `tryst_info` WHERE is_verified=True and tickverif=False";
+        $query = "SELECT * from `tryst_info` WHERE is_verified=True";
         $result = mysqli_query($con,$query);
 
         // show result
@@ -24,19 +24,24 @@
         if (mysqli_num_rows($result) > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                $arr = array($row['cname'],$row['c_mailId'],$row['cmobile']);
+                $arr = array($row['ad52ss'],$row['cname'],$row['c_mailId'],$row['cmobile'],$row['ccollege'],$row['rollno'],$row['dob']);
                 $res[] = $arr;
             }
             echo "<table>";
-            echo "<tr><th>Name</th><th>Email</th><th>Mobile</th></tr>";
+            echo "<tr><th>photo</th><th>Name</th><th>Email</th><th>Mobile</th><th>College Name</th><th> DOB</th></tr>";
             
-            $mail_link = 'https://localhost/TRYST-1/api/sendmail.php';
             foreach ($res as $row) {
+                $mail_link = 'https://tryst.azurewebsites.net/api/sendmail.php';
+                
+    
                 echo "<tr>";
+                echo "<td><img src='" . $row[0] . "' height='200px' width='200px' /></td>";
                 echo "<td>" . $row[1] . "</td>";
                 echo "<td>" . $row[2] . "</td>";
                 echo "<td>" . $row[3] . "</td>";
-                echo "<td>". "<a href=".$mail_link."?data=" . encryptData($row[1],$row[2],$row[3]) . " target='_blank' '>Send Mail</a>" . "</td>";
+                echo "<td>". "<a href=".$mail_link."?data=" . encryptData($row[1],$row[2],$row[3]) ."&cname=".urlencode($row[4])."&dob=".urlencode($row[6])." target='_blank' '>Send Mail</a>" . "</td>";
+                echo "<td>" . $row[4] . "</td>";
+                echo "<td>" . $row[6] . "</td>";
                 echo "</tr>";
             }
             echo "</table>";

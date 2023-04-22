@@ -15,8 +15,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body
-  style="background-image: url('https://tryststorage.blob.core.windows.net/blobtr/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
+<body style="background-image: url('images/logobg.png'); background-repeat: no-repeat; background-size:cover; background-position: center center; min-width: 100%; min-height: 100%;">
   <nav class="position" role="navigation">
     <!-- new -->
     <div id="menuToggle">
@@ -28,7 +27,6 @@
       <span></span>
       <span></span>
       <span></span>
-
       <!--
             Too bad the menu has to be inside of the button
             but hey, it's pure CSS magic.
@@ -40,9 +38,9 @@
         <a href="Main_Events.html">
           <li>Events</li>
         </a>
-        <a href="Sponsor.html">
+        <!-- <a href="Sponsor.html">
           <li>Sponsors</li>
-        </a>
+        </a> -->
         <a class="action" href="Register.php">
           <li>Register</li>
         </a>
@@ -59,7 +57,7 @@
     <ul class="options">
       <li><a href="index.php">Home </a> </li>
       <li><a href="Main_Events.html">Events</a> </li>
-      <li><a href="Sponsor.html">Sponsors</a> </li>
+      <!-- <li><a href="Sponsor.html">Sponsors</a> </li> -->
       <li><a class="active" href="Register.php">Register</a> </li>
       <li><a href="team.html">Contact Us</a> </li>
       <li><a href="Aboutus.html">About Us </a> </li>
@@ -105,12 +103,13 @@
 
 
 
-  <div id="regform">
+<div id="regform">
     <div class="container">
       <div class="title">Registration</div>
       <div class="content">
-        <h3> A Mail with Tickets will be sent to email id</h3>
-        <form action="insert_data.php" method="post" enctype="multipart/form-data">
+        <h3> A Verification Mail will be sent to email id</h3>
+        <form action="insert_data.php" name="trystform" method="post" enctype="multipart/form-data" onsubmit="validate()">
+
           <div class="user-details">
             <div class="input-box">
               <span class="details">Full Name</span>
@@ -122,7 +121,7 @@
             </div>
             <div class="input-box">
               <span class="details">College Roll Number</span>
-              <input type="text" placeholder="Enter your name" name="rollno" required>
+              <input type="text" placeholder="Enter your college roll no." name="rollno" required>
             </div>
             <div class="input-box">
               <span class="details">Mobile Number</span>
@@ -130,19 +129,27 @@
             </div>
             <div class="input-box">
               <span class="details">Email Id</span>
-              <input type="email" placeholder="Enter your name" name="email" required>
+              <input type="email" placeholder="Enter your email" name="email" required>
             </div>
             <div class="input-box">
               <span class="details">Date of Birth</span>
-              <input type="date" name="dob" required>
+              <input type="date" name="dob" max="2008-04-15" required>
             </div>
-            <!-- <div class="inpimg">
-              <span class="details">Adda52 profile ScreenShot</span>
-              <input type="file" name="fileToUpload" id="fileToUpload">
-            </div> -->
+            <!-- <div class="inpimg"> -->
+            <div class="input-box">
+              <span class="details">Photo ID card</span>
+              <input id="file-input" type="file" name="fileToUpload" required/>
+              <span class="details" id="file-result">max size 400kb</span>
+            </div>
+            <!-- </div> -->
+            <div class="note">
+              <p class="details">You must upload a identification card which can be a aadhaar card, driver's license,
+                or any government-issued ID, The details entered by an individual should match with the details as in
+                the photo identification card.</p>
+            </div>
           </div>
           <div class="button">
-            <input type="submit" name="submit" value="Register">
+            <input id="file-submit" type="submit" name="submit" value="Register">
           </div>
         </form>
       </div>
@@ -167,7 +174,7 @@
       <div>
         <div class="email">
           <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="">
-          <a href="tryst.2k23@gmail.com"><span>tryst.2k23@gmail.com</span> </a>
+          <a href="mailto: tryst.2k23@gmail.com" target="_blank"><span>tryst.2k23@gmail.com</span> </a>
         </div>
       </div>
     </div>
