@@ -145,7 +145,7 @@
             </div>
           </div>
         </div>
-        
+    
         <div class="lg:w-1/3 sm:w-1/2 p-14">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
