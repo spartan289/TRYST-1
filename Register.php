@@ -144,7 +144,7 @@
             <!-- </div> -->
             <div class="note">
               <p class="details">You must upload a identification card which can be a aadhaar card, driver's license,
-                or any government-issued ID, The details entered by an individual should match with the details as in
+                or any government-issued ID. The details entered by an individual should match with the details as in
                 the photo identification card.</p>
             </div>
           </div>
