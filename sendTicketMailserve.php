@@ -14,7 +14,7 @@
         
     
 
-        $query = "SELECT * from `tryst_info` WHERE is_verified=True";
+        $query = "SELECT * from `tryst_info` WHERE is_verified=True and tickverif=False";
         $result = mysqli_query($con,$query);
 
         // show result

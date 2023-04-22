@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
             
             $surl = getImageURL($file);
 
-            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss,rollno,dob,is_verified,tickverif) VALUES ('$uname', '$email', '$mobile', '$college','$surl','$rollno','$dob','1','1')";
+            $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss,rollno,dob,is_verified,tickverif) VALUES ('$uname', '$email', '$mobile', '$college','$surl','$rollno','$dob','1','0')";
 
             sendMail($uname, $email, $mobile, $dob, $college);
             mysqli_query($con, $query);
