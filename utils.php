@@ -32,21 +32,24 @@
         $mail = new PHPMailer;
         $mail->isSMTP();
         if(getenv('ENVIRONMENT') == 'production'){
-            $mail->Host = 'smtp.eu.mailgun.org';
+            // $mail->Host = 'smtp.eu.mailgun.org';
             $mail->SMTPAuth = true;
             // $mail->SMTPDebug = 2;
-    
-            $mail->Username = getenv('MAILGUN_USERNAME');
-            $mail->Password = getenv('MAILGUN_PASSWORD');
+            $mail->Host = 'us2.smtp.mailhostbox.com	';
+            $mail->Username = getenv('C_EMAIL');
+            $mail->Password = getenv('C_PASS');
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
             $mail->setFrom(getenv('MAILGUN_USERNAME'), 'Admininstration Tryst');
     
         }
         else{
-            $mail->Username = 'tryst.tech@gmail.com';
-            $mail->Password = 'TrystTech@1';
-            $mail->Host = 'smtp.gmail.com';
+            // get .env file
+            $envs = parse_ini_file('.envs');
+
+            $mail->Host = 'us2.smtp.mailhostbox.com	';
+            $mail->Username = $envs['C_EMAIL'];
+            $mail->Password = $envs['C_PASS'];
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
