@@ -139,6 +139,7 @@
             <div class="input-box">
               <span class="details">Photo ID card</span>
               <input id="file-input" type="file"  accept="image/*"  name="fileToUpload" required/>
+
               <span class="details" id="file-result">max size 400kb</span>
             </div>
             <!-- </div> -->
