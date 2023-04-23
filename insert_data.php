@@ -10,9 +10,6 @@ use MicrosoftAzure\Storage\Blob\Models\CreateBlockBlobOptions;
 
 require 'utils.php';
 session_start();
-
-
-
 if (isset($_POST['submit'])) {
 
 
@@ -56,6 +53,12 @@ if (isset($_POST['submit'])) {
             //code...
             try{
                 $surl = getImageURL($file);
+                if($surl == NULL){
+                    $_SESSION['message'] = 'Error in uploading image';
+                    mysqli_close($con);
+                    header('location: /Register.php');
+                    exit();
+                }
 
             }
             catch(Exception $e){
@@ -79,6 +82,10 @@ if (isset($_POST['submit'])) {
 }
 function getImageURL($file)
 {
+    // check if image file is a actual image or other extension
+
+    
+
 
     $check = getimagesize($file["tmp_name"]);
     if ($check !== false) {
