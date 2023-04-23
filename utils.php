@@ -53,7 +53,7 @@
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
-            $mail->setFrom('tryst.tech@gmail.com', 'Admininstration Tryst');
+            $mail->setFrom('admin@trystkmv2k23.tech', 'Admininstration Tryst');
         }
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
@@ -93,6 +93,9 @@
         if (!$mail->send()) {
             // echo 'Message could not be sent.';
             // echo 'Mailer Error: ' . $mail->ErrorInfo;
+            return false;
+        } else {
+            // echo 'Message has been sent';
             $env = parse_ini_file('.env');
 
             $conn = mysqli_init();
@@ -104,8 +107,8 @@
             $query = "UPDATE `tryst_info` SET tickverif=1 WHERE c_mailId = '$email' and is_verified=1;" ;
             $result = mysqli_query($conn, $query) ;
             mysqli_close($conn);
-        } else {
-            // echo 'Message has been sent';
+            return true;
+
         }
     }
     

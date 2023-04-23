@@ -69,13 +69,21 @@ if (isset($_POST['submit'])) {
             }
 
             $query = "INSERT INTO `tryst_info` (cname, c_mailId , cmobile, ccollege, ad52ss,rollno,dob,is_verified,tickverif) VALUES ('$uname', '$email', '$mobile', '$college','$surl','$rollno','$dob','1','0')";
-
-            sendMail($uname, $email, $mobile, $dob, $college);
-            mysqli_query($con, $query);
-            $_SESSION['message'] = "Tickets has been sent to your mail ID";
-            mysqli_close($con);
-            header('location: /');
-            exit();
+            $mailSent = sendMail($uname, $email, $mobile, $dob, $college);
+            if($mailSent){
+                $_SESSION['message'] = "Tickets has been sent to your mail ID (if not contact us at tryst.2k23@gmail.com)";
+                mysqli_query($con, $query);
+                mysqli_close($con);
+                header('location: /');
+                exit();
+    
+            }
+            else{
+                $_SESSION['message'] = "Error in sending mail try different email id";
+                mysqli_close($con);
+                header('location: /Register.php');
+                exit();
+            }
 
     }
 
@@ -179,7 +187,9 @@ function sendVerificationMail($name, $email, $mobile)
     $mail->Body = $Body;
 
     if (!$mail->send()) {
+        return false;
     } else {
         //display error message
+        return true;
     }
 }
