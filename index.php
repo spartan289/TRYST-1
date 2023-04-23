@@ -113,7 +113,7 @@
                     <div class="flex relative">
                         <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center"
                             src="images/event/bekhudi.jpeg">
-                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64" 
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64"
                             id="position">
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">BATTLE OF BANDS</h1>
                             <p class="leading-relaxed">It's an opportunity for musicians to experiment with their
@@ -128,9 +128,10 @@
                             src="images\event\spectogram.jpeg">
                         <div
                             class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64">
-                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">PIXEL</h1>
-                            <p class="leading-relaxed ">An online photography competition, we will be accepting
-                                online entries for our upcoming competition based on the listed themes.</p>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">SPECTOGRAM</h1>
+                            <p class="leading-relaxed ">An offline photography competition. The theme for the
+                                competition will be given on the spot, and participants will have to take photographs
+                                surrounding the given theme in the festival and capture the perfect shots.</p>
                         </div>
                     </div>
                 </div>
