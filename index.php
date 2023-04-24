@@ -155,9 +155,7 @@
                         <div
                             class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 overflow-scroll h-64">
                             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">NRITYANG</h1>
-                            <p class="leading-relaxed"> dance competition ,a stage to the dancers to showcase their
-                                skills and
-                                provides a unique opportunity to witness the beauty and athleticism of western dance.
+                            <p class="leading-relaxed"> NRITYAANG, The Indian dance society of Keshav Mahavidyalaya, is all set to organize its 2 major inter-college dance competitions as a part of  its annual cultural fest TRYST. 
                             </p>
                         </div>
                     </div>
