@@ -93,56 +93,7 @@
         if (!$mail->send()) {
             // echo 'Message could not be sent.';
             // echo 'Mailer Error: ' . $mail->ErrorInfo;
-            $envs = parse_ini_file('.envs');
-            $mail1 = new PHPMailer;
-            $mail1->Host = 'us2.smtp.mailhostbox.com	';
-            $mail1->Username = $envs['C_EMAIL'];
-            $mail1->Password = $envs['C_PASS'];
-            $mail1->SMTPAuth = true;
-            $mail1->SMTPSecure = 'tls';
-            $mail1->Port = 587;
-            $mail1->setFrom('admin@trystkmv2k23.tech', 'Admininstration Tryst');
-            $mail1->addAddress($email, $name);
-            $mail1->isHTML(true);
-            $mail1->Subject = "Entrance Pass for Tryst'23";
-            $qr = getQRCode($name, $email, $mobile);
-            
-            $mail1->Body = "
-            Dear ".$name." ,<br>
-    
-            Thank you for signing up for Tryst'23. We are pleased to attach your entrance pass for the event<br> that contains a unique QR code. The same QR code will be used for the entry to the event. 
-    
-            You are hereby requested to keep this pass readily available for the valid entry. A two step process will be followed for the entry: <br>
-            1. Scanning of QR code to check whether the candidate has registered before or not. <br>
-            2. A valid Identity proof, the same that you have uploaded on the website to register yourself. <br>
-            Following points to be noted: <br>
-            1. Entry is strictly restricted to preregistered students only once they show the valid QR code and ID proof. <br>
-            2. This QR code is valid for single entry. This means that once you are inside the campus you cant go out and come back again. <br>
-            3. Please ensure that the 'Name' and 'Date of birth' on your photo identification card matches the name on your entrance pass to avoid any inconvenience.
-            <br>
-            We encourage you familiarize yourself with the schedule of activities, as we are confident that you will have a great time. <br><br>
-    
-            Thank you for your interest in Tryst'23. We look forward to seeing you there. <br><br>
-    
-            Best regards, <br>
-            Team Tryst <br><br>
-    
-            ----Recipient Details ----<br>
-            Name : ".$name." <br>
-            DoB :  ".$dob."  <br>
-            College Name : ".$cname." <br>
-            Phone number : ".$mobile."<br>
-            <br>
-            -----QR CODE ----<br>
-            <img src='".$qr."' alt='QR Code'>
-            ";
-            if(!$mail1->send()){
-                return false;
-            }
-            else{
-                return true;
-            }
-    
+            return false;
         } else {
             // echo 'Message has been sent';
             $env = parse_ini_file('.env');
