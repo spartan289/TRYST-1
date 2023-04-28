@@ -99,7 +99,15 @@
 
 
 
-
+    <div>
+      <br><br><br><br><br>
+      <div class="CTR">
+        <span id="HD">Registration</span>
+        <br>
+        <span id="HD">Closed</span>
+        <br><br><br><br><br>
+      </div>
+    </div>
 
 
 
